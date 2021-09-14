@@ -1,0 +1,7015 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+body {
+    overflow: hidden;
+    background: #1a2c38;
+    color: #fff;
+    line-height: 1;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p, button, pre {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+}
+tr {
+    position: relative;
+    border-bottom: 1px solid #20343f;
+}
+
+td, th {
+    height: 70px;
+    line-height: 70px;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: -0.7px;
+    
+}
+
+td {
+    border-spacing: 0px;
+    border-style: none;
+    padding: 0px;
+    letter-spacing: -0.7px;
+}
+
+a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: 150%;
+    text-decoration: none;
+    letter-spacing: -0.7px;
+}
+
+a:hover, table a:hover {
+    color: #ffbb32;
+}
+
+body {
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+    word-break: keep-all;
+    *word-break: keep-all;
+    -ms-word-break: keep-all;
+}
+
+img, fieldset, iframe {
+    border: 0 none;
+}
+
+li {
+    list-style: none;
+    letter-spacing: -0.7px;
+}
+
+input, select, button, textarea {
+    padding: 0;
+    border: 1px solid #ddd;
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    letter-spacing: -0.7px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+
+label, button {
+    cursor: pointer;
+    letter-spacing: -0.7px;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    line-height: 150%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    letter-spacing: -0.7px;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+option {
+    padding-right: 6px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+pre {
+    white-space: pre-line;
+}
+
+span {
+    line-height: 100%;
+}
+
+*[hidden] {
+    display: none;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+input, button {
+    outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px transparent inset;
+    -webkit-text-fill-color: #fff;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+select {
+    width: 195px;
+    height: 32px;
+    padding: 0 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #091626 url(../img/selectbox.png) no-repeat 95% 50%;
+    cursor: pointer;
+    border: 1px solid #496e77;
+    color: #d3e1ec;
+    box-sizing: border-box;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+.no-drag {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.ytxt {
+    color: #ffb828;
+}
+.wtxt {
+    color: #fff;
+    font-weight: normal;
+}
+
+.dbtxt {
+    color: #9ab1bf;
+}
+
+.rtxt {
+    color: #ff3541;
+}
+
+.gtxt {
+    color: #848484;
+}
+
+.page_num {
+    position: relative;
+    padding: 70px 0 100px;
+    text-align: center;
+    font-size: 0;
+}
+
+.page_num a {
+    display: inline-block;
+    margin-right: 3px;
+    width: 44px;
+    height: 44px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 42px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #adc1cc;
+    cursor: pointer;
+}
+
+.page_num a:last-child {
+    border-right: 1px solid #ccc;
+    margin-right: 0;
+}
+
+.page_num a.activ {
+    background: #ffbc30;
+    color: #000;
+    border: 1px solid #ffbc30 !important;
+}
+
+.page_num a.page {
+    padding: 0;
+    height: 44px;
+    text-indent: -9999px;
+}
+
+.page_num a.first {
+    background: url(../img/sp.png)no-repeat;
+    background-position: -0px 0px;
+}
+
+.page_num a.last {
+    background: url(../img/sp.png)no-repeat;
+    background-position: -141px 0px;
+}
+
+.page_num a.l {
+    background: url(../img/sp.png)no-repeat;
+    background-position: -47px 0px;
+}
+
+.page_num a.r {
+    background: url(../img/sp.png)no-repeat;
+    background-position: -94px 0px;
+}
+
+.page_num .w {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+    padding: 0;
+    border: none;
+}
+
+.btn1 {
+    background: #4d81a8;
+    color: #fff;
+    width: 103px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.btn2 {
+    background: #528cde;
+    color: #fff;
+    width: 160px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 2px;
+    font-size: 17px;
+}
+
+.btn3 {
+    margin-left: 10px;
+    color:#fff;
+    background: #4e84a8 !important;
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+select.array {
+    width: 175px;
+    height: 50px;
+    border: 1px solid #ddd;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+input[type='checkbox'] {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    background: #f3f3f3;
+    cursor: pointer;
+    border-radius: 0;
+    vertical-align: middle;
+}
+
+.cb:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+/*header*/
+.dim {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 11;
+}
+.btn_go_top {
+    display: none;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    bottom: 30px;
+    margin-left: 589px;
+    position: fixed;
+    z-index: 10;
+    cursor: pointer;
+    background: url(../img/top_button.png);
+}
+
+header {
+    position: relative;
+    height: 60px;
+    background: #fff;
+    z-index: 12;
+}
+
+header ul {
+    display: inline-block;
+}
+
+header>ul.mainmenu>li {
+    float: left;
+    width: 70px;
+    line-height: 60px;
+    text-align: center;
+}
+header>ul.mainmenu>li a{
+    color:#000;
+}
+
+header a,
+footer a {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+header>ul.mainmenu>li.sports {
+    margin-right: 13px;
+}
+
+header>ul>li.menu_btn button {
+    width: 20px;
+    height: 17px;
+    margin-top: 3px;
+    background-image: url(../img/allicon.png);
+    background-position: -124px -1px;
+    text-indent: -9999px;
+    vertical-align: -2px;
+    border-radius: 0;
+}
+
+header>ul>li.sns {
+    position: relative;
+    cursor: pointer;
+}
+
+header>ul>li.sns:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    top: 30px;
+    left: 55px;
+    background-image: url(../img/allicon.png);
+    background-position: -159px -1px;
+}
+
+header>ul>li.sns.on:after {
+    transform: rotate(180deg);
+}
+
+.sns .sns_list {
+    display: none;
+    position: absolute;
+    width: 155px;
+    height: 160px;
+    top: 60px;
+    left: 0;
+    padding: 20px 16px;
+    background: #fff;
+    border: 1px solid #dadada;
+    box-sizing: border-box;
+}
+
+.sns.on .sns_list {
+    display: block;
+}
+
+.sns .sns_list li {
+    display: block;
+    width: 100px;
+    height: 20px;
+    text-align: left;
+    padding: 0 0 14px 0px;
+}
+
+.sns .sns_list li a {
+    display: block;
+    position: relative;
+    padding: 0 0 16px 23px;
+}
+
+.sns .sns_list li.facebook:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 21px;
+    left: 16px;
+    background-image: url(../img/allicon.png);
+    background-position: -169px -1px;
+}
+
+.sns .sns_list li.instargram:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 55px;
+    left: 16px;
+    background-image: url(../img/allicon.png);
+    background-position: -188px -1px;
+}
+
+.sns .sns_list li.youtube:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 89px;
+    left: 16px;
+    background-image: url(../img/allicon.png);
+    background-position: -207px -1px;
+}
+
+.sns .sns_list li.navertv:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 123px;
+    left: 16px;
+    background-image: url(../img/allicon.png);
+    background-position: -226px -1px;
+}
+
+header .right {
+    margin-right: 20px;
+}
+
+header .right>li {
+    position: relative;
+    display: inline-flex;
+    padding: 0 15px 0 15px;
+}
+
+header .right .login {
+    position: relative;
+    z-index: 100;
+}
+
+header .right .login .login_box {
+    display: none;
+    position: absolute;
+    width: 315px;
+    height: 220px;
+    top: 38px;
+    right: 0;
+    padding: 25px 20px;
+    background: #fff;
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
+}
+
+header .right .login .on+.login_box {
+    display: block;
+}
+
+header .right .login .login_box input {
+    position: relative;
+    width: 168px;
+    height: 39px;
+    padding: 12px 16px 12px 36px;
+    background: #f6f6f6;
+    box-sizing: border-box;
+    background: #f6f6f6 url(../img/loginform_bg_04.png) no-repeat 16px center;
+    border: 0;
+    color:#565656;
+}
+header .right .login .login_box input::placeholder{
+    color:#565656;
+}
+
+header .right .login .login_box input:first-child {
+    margin-bottom: 1px;
+    background: #f6f6f6 url(../img/loginform_bg_03.png) no-repeat 16px center;
+}
+
+header .right .login .login_box div div {
+    width: 170px;
+    display: inline-block;
+}
+
+header .right .login .login_box .btn2 {
+    float: right;
+    width: 103px;
+    height: 80px;
+    color: #fff;
+    font-size: 16px;
+}
+
+header .right .login .login_box .btn2:before,
+header .right .login .login_box a:before {
+    display: none;
+}
+
+header .right .join,
+header .right .join_login {
+    width: 67px;
+}
+
+header .right .mydata {
+    width: 60px;
+    padding: 0 15px 0 10px;
+}
+
+header .right .charge {
+    width: 44px;
+    padding: 0 15px 0 8px;
+}
+
+header .right .c_center {
+    width: 67px;
+    padding: 0 15px 0 8px;
+}
+
+header .right .logout {
+    width: 65px;
+    padding: 0 15px 0 10px;
+}
+
+header .right .login {
+    width: 52px;
+}
+header .right li a:hover,
+header .right li button:hover{
+    color: #565656;
+}
+
+/*전체설정*/
+header .right li a:before,
+header .right li button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 2px;
+    left: -0px;
+    background-image: url(../img/allicon.png);
+}
+
+header .right .join a:before {
+    width: 17px;
+    height: 16px;
+    top: 2px;
+    left: -5px;
+    background-position: -1px -1px;
+}
+
+header .right .mydata a:before {
+    width: 16px;
+    height: 17px;
+    top: 2px;
+    left: -5px;
+    background-position: -48px -1px;
+}
+
+header .right .charge a:before {
+    width: 16px;
+    height: 17px;
+    top: 1px;
+    left: -5px;
+    background-position: -67px -1px;
+}
+
+header .right .c_center a:before {
+    width: 15px;
+    height: 17px;
+    top: 1px;
+    left: -5px;
+    background-position: -86px -1px;
+}
+
+header .right .logout button:before {
+    width: 12px;
+    height: 17px;
+    top: 2px;
+    left: -5px;
+    background-position: -33px -1px;
+}
+
+header .right .login button:before {
+    width: 12px;
+    height: 17px;
+    top: 2px;
+    left: -5px;
+    background-position: -19px -1px;
+}
+
+header .right .login .login_box input:first-child:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 15px;
+    top: 2px;
+    left: -5px;
+    background-position: -349px -1px;
+}
+
+.login_box>ul {
+    height: 11px;
+    margin: 10px 0 30px;
+}
+
+.login_box>ul li {
+    text-align: center;
+}
+
+.login_box div.sns_login {
+    position: relative;
+}
+
+.login .login_box ul {
+    display: block;
+}
+
+.login .login_box ul li {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    line-height: 100%;
+    box-sizing: border-box;
+}
+
+.login .login_box ul li:first-child {
+    width: 83px;
+    font-weight: bold;
+}
+
+.login .login_box ul li:nth-child(2) {
+    width: 80px;
+    margin-right: 7px;
+}
+
+.login .login_box ul li a {
+    display: block;
+}
+
+header ul.right .login .login_box ul li:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    top: 6px;
+    right: 2px;
+    background: #dcdcdc;
+}
+
+header ul.right .login .login_box ul li:nth-child(1):after {
+    right: 0px;
+}
+
+header ul.right .login .login_box ul li:nth-child(2):after {
+    right: -4px;
+}
+
+header ul.right .login .login_box ul li:last-child:after {
+    display: none;
+}
+
+.login .login_box .sns_login {
+    position: relative;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 275px;
+    height: 45px;
+    background: #f9f9f9;
+}
+
+div.sns_login span {
+    margin-left: 20px;
+    line-height: 45px;
+    font-weight: bold;
+    color: #333;
+}
+
+header div.sns_login a {
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/allicon.png);
+}
+
+header div.sns_login a.naver {
+    top: 10px;
+    left: 125px;
+    background-position: -245px -1px;
+}
+
+header div.sns_login a.kakao {
+    top: 10px;
+    left: 160px;
+    background-position: -271px -1px;
+}
+
+header div.sns_login a.facebook {
+    top: 10px;
+    left: 195px;
+    background-position: -297px -1px;
+}
+
+header div.sns_login a.google {
+    top: 10px;
+    left: 230px;
+    background-position: -323px -1px;
+}
+
+header ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header ul:first-child {
+    float: left;
+}
+
+header ul.right:last-child {
+    float: right;
+    line-height: 60px;
+}
+
+header ul:last-child li,
+header ul:last-child button {
+    font-size: 13px;
+    color: #565656;
+    text-align: center;
+}
+
+header .right>li>a,
+header .right>li>button {
+    position: relative;
+    padding: 0 15px 0 15px;
+}
+
+header h1 {
+    position: absolute;
+    width: 163px;
+    height: 27px;
+    left: 50%;
+    margin:16px 0 0 -81px;
+
+}
+
+header h1 img {
+    margin-top: 16px;
+}
+
+/* 오른쪽 작대기 */
+header>ul.right>li a:after,
+header>ul.right>li button:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    top: 5px;
+    right: 0;
+    background: #dcdcdc;
+}
+
+header>ul.right>li:last-child a:after,
+header>ul.right>li:last-child button:after {
+    display: none;
+}
+
+/*블라인드 on off 게임메뉴*/
+li.menu_btn {
+    position: relative;
+}
+
+li.menu_btn .gamemenu {
+    display: none;
+    position: absolute;
+    width: 760px;
+    height: 740px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.mainmenu .menu_btn>button.on+.gamemenu {
+    display: block;
+}
+
+li.menu_btn .gamemenu>div {
+    padding: 20px 40px 50px 40px;
+    box-sizing: border-box;
+}
+
+li.menu_btn .gamemenu>div p {
+    text-align: left;
+    padding-bottom: 17px;
+}
+
+li.menu_btn .gamemenu li {
+    display: inline-block;
+}
+
+li.menu_btn .gamemenu div ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+li.menu_btn .bluemu_wrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 140px;
+    padding: 30px 40px !important;
+    background: #528cde;
+}
+
+li.menu_btn .gamemenu .bluemu {
+    display: flex;
+}
+
+li.menu_btn .gamemenu .bluemu li:last-child {
+    margin-right: 0px;
+}
+
+li.menu_btn .gamemenu .bluemu a {
+    display: block;
+    width: 56px;
+    height: 80px;
+    padding-top: 67px !important;
+    color: #fff;
+    font-size: 13px;
+}
+
+li.menu_btn .gamemenu .bluemu a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/allicon.png);
+}
+
+li.menu_btn .gamemenu li {
+    width: 80px;
+    height: 105px;
+}
+
+li.menu_btn .gamemenu li a {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 93px;
+}
+
+li.menu_btn .gamemenu .sptmu a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/gameimg/gameimg1.png);
+}
+
+li.menu_btn .gamemenu .ftymu a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/gameimg/gameimg2.png);
+}
+
+li.menu_btn .gamemenu .casinomu a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/gameimg/gameimg3.png);
+}
+
+li.menu_btn .gamemenu .cardmu a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/gameimg/gameimg4.png);
+}
+
+.mid_box {
+    display: flex;
+}
+
+.gamemenu div div ul {
+    float: left;
+}
+
+.gamemenu div>ul {
+    float: left;
+}
+
+.sptmu,
+.ftymu {
+    display: inline-block !important;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 330px;
+    height: 119px;
+    border: 0 !important;
+}
+
+.mid_box:after,
+.gamemenu div:after,
+.gamemenu div>ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+li.menu_btn .gamemenu .bluemu li:nth-child(1) a:after {
+    background-position: -0px -26px;
+}
+
+li.menu_btn .gamemenu .bluemu li:nth-child(2) a:after {
+    background-position: -59px -26px;
+}
+
+li.menu_btn .gamemenu .bluemu li:nth-child(3) a:after {
+    background-position: -117px -26px;
+}
+
+li.menu_btn .gamemenu .bluemu li:nth-child(4) a:after {
+    background-position: -175px -26px;
+}
+
+li.menu_btn .gamemenu .bluemu li:nth-child(5) a:after {
+    background-position: -233px -26px;
+}
+
+li.menu_btn .gamemenu .bluemu li:nth-child(6) a:after {
+    background-position: -291px -26px;
+}
+
+li.menu_btn .gamemenu div {
+    border-top: 1px solid #e5e5e5;
+}
+
+.casinomu,
+.cardmu {
+    width: 760px;
+    height: 196px;
+    box-sizing: border-box;
+}
+
+.bluemu_wrap .xbtn {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    top: 10px;
+    right: 10px;
+    background-image: url(../img/allicon.png);
+    background-position: -489px -54px;
+}
+
+/*블라인드 on off 게임메뉴 끝*/
+/*header 끝*/
+/*nav*/
+nav {
+    position: relative;
+    margin-bottom: 20px;
+    height: 80px;
+    background: #253743;
+    border-bottom: 1px solid #364854;
+    box-sizing: border-box;
+}
+
+nav.on {
+    background: #000;
+}
+
+nav:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+nav h2 {
+    float: left;
+    width: 163px;
+    height: 80px;
+    margin-left: 40px;
+}
+
+nav h2 a {
+    display: block;
+    margin-top: 27px;
+}
+
+.mainnav {
+    width: 830px;
+    margin: 0 auto;
+}
+
+.mainnav:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.mainnav li {
+    float: left;
+    font-size: 20px;
+    color: #bdc7c9;
+    box-sizing: border-box;
+}
+
+.mainnav li:hover a,
+.mainnav li.on a {
+    border-bottom: 2px solid #ffbb32;
+}
+
+.mainnav li a {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 80px;
+    height: 79px;
+}
+
+.mainnav li.sport a {
+    width: 200px;
+}
+.mainnav li.rank a {
+    width: 104px;
+}
+
+.mainnav li.community a {
+    width: 181px;
+}
+
+.mainnav li.newnews a {
+    width: 162px;
+}
+
+.mainnav li.goldmarket a {
+    width: 183px;
+}
+
+.newnews .tab>ul:first-child li {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.nav_right {
+    position: absolute;
+    top: 0;
+    right: 40px;
+}
+
+.nav_right .q_livegame {
+    position: absolute;
+    display: block;
+    width: 77px;
+    height: 23px;
+    top: 25px;
+    left: -98px;
+    color: #ffbb32;
+    background-image: url(../img/proicon.png);
+    background-position: -129px -79px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 8px;
+    line-height: 23px;
+    font-size: 12px;
+}
+
+.nav_right .event a{
+    display: block;
+    width: 326px;
+    height: 80px;
+    background: url(../img/banner/header_banner1.png) no-repeat;
+}
+
+.slidmenu {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 204px;
+    background: #000;
+    z-index: 2;
+}
+
+.slidmenu.on {
+    display: block;
+}
+
+.slidmenu>.slidmenu_wrap {
+    width: 811px;
+    margin: 25px auto 0;
+}
+
+.slidmenu>.slidmenu_wrap>ul {
+    float: left;
+    width: 155px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.slidmenu>.slidmenu_wrap>ul:nth-child(2) {
+    padding-left: 25px;
+}
+.slidmenu>.slidmenu_wrap>ul:nth-child(4) {
+    margin-left: 17px;
+}
+.slidmenu>.slidmenu_wrap>ul:nth-child(5) {
+    padding-left: 32px;
+}
+
+.slidmenu>.slidmenu_wrap {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.slidmenu>.slidmenu_wrap>ul>li {
+    display: block;
+}
+
+.slidmenu>.slidmenu_wrap>ul>li a {
+    display: block;
+    text-align: center;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.slidmenu>.slidmenu_wrap>ul>li a:hover {
+    color: #ffbb32;
+}
+/*nav끝*/
+
+/*main*/
+main {
+    max-width: 1840px;
+    width: 1840px;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+/*탭메뉴*/
+.livegame_tab {
+    overflow: hidden;
+    min-width: 1840px;
+    margin-bottom: 20px;
+}
+
+.livegame_tab>ul {
+    float: left;
+    width: 105px;
+    height: 100px;
+    padding: 0;
+    margin: 0 15px 0 0;
+    list-style: none;
+    overflow: hidden;
+    border: 1px solid #ffbc30;
+    box-sizing: border-box;
+}
+
+.livegame_tab ul li {
+    display: block;
+    width: 105px;
+    height: 50px;
+    margin-right: 15px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: #061721;
+    color: #ffbc30;
+    font-weight: 500;
+}
+
+.livegame_tab ul li:hover,
+.livegame_tab ul li.on {
+    background: #ffbc30;
+    color: #061721;
+}
+
+.livegame_tab .conBox {
+    float: left;
+    max-width: 1720px;
+    min-width: 880px;
+    height: 100px;
+    overflow: hidden;
+    display: none;
+}
+
+.livegame_tab .conBox.on {
+    display: block;
+}
+
+.tab {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.tab>ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.tab>ul>li {
+    float: left;
+    width: 121px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    background: #122430;
+    color: #94a7b8;
+    border-right: 1px solid #253640;
+    font-size: 14px;
+}
+
+.tab>ul>li:last-child {
+    border: 0;
+}
+
+.tab>ul>li:hover,
+.tab>ul>li.on {
+    background: #000;
+    color: #ffbc2f;
+}
+
+.tab>.conBox {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #071724;
+    display: none;
+}
+
+.tab>.conBox.on {
+    display: block;
+}
+
+.cttbox.newnews .tab>.conBox ul li {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #0d202e;
+    font-size: 14px;
+    padding-left: 80px;
+}
+
+.cttbox.newnews .tab>.conBox ul li span {
+    line-height: 50px;
+}
+
+.cttbox .tab>.conBox ul li span.tit {
+    overflow: hidden;
+    display: inline-block;
+    width: 190px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.cttbox .tab>.conBox ul li span.date {
+    float: right;
+    padding-right: 20px;
+    color: #6e8595;
+    font-size: 13px;
+}
+
+.cttbox .tab>.conBox ul li span.date:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 19px;
+    right: 69px;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -90px;
+}
+
+.cttbox .tab>.conBox ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 49px;
+    height: 20px;
+    top: 16px;
+    left: 19px;
+    background-image: url(../img/proicon.png);
+}
+
+.cttbox .tab>.conBox ul li.event:before {
+    background-position: -59px -60px;
+}
+
+.cttbox .tab>.conBox ul li.noti:before,
+.cttbox .tab>.conBox ul.noti li:before {
+    background-position: -0px -60px;
+}
+
+/*탭메뉴*/
+/*콘텐츠 왼쪽*/
+aside {
+    float: left;
+    width: 365px;
+}
+
+.left .cttbox.weeklyrank ul {
+    padding: 10px 20px 10px 23px;
+}
+
+.left .cttbox.weeklyrank ul li {
+    position: relative;
+    display: block;
+    height: 50px;
+    margin-left: 35px;
+    margin-bottom: -4px;
+    font-size: 14px;
+    line-height: 50px;
+    box-sizing: border-box;
+}
+
+.left .cttbox.weeklyrank ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 29px;
+    top: 11px;
+    left: -38px;
+    background-image: url(../img/proicon.png);
+}
+
+.left .cttbox.weeklyrank ul li.rank1:before {
+    background-position: -0px -0px;
+}
+
+.left .cttbox.weeklyrank ul li.rank2:before {
+    background-position: -35px -0px;
+}
+
+.left .cttbox.weeklyrank ul li.rank3:before {
+    background-position: -70px -0px;
+}
+
+.left .cttbox.weeklyrank ul li.rank4:before {
+    background-position: -105px -0px;
+}
+
+.left .cttbox.weeklyrank ul li.rank5:before {
+    background-position: -140px -0px;
+}
+
+.left .cttbox.weeklyrank ul li span {
+    height: 30px;
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+}
+
+.left .cttbox.weeklyrank ul li span:last-child {
+    float: right;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    vertical-align: middle;
+    line-height: 50px;
+}
+
+.left .cttbox.weeklyrank ul li span:last-child:before {
+    content: '-';
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+}
+
+.left .cttbox.weeklyrank ul li.new span:last-child:before {
+    content: '';
+    width: 29px;
+    height: 10px;
+    right: 3px;
+    top: 19px;
+    background-image: url(../img/proicon.png);
+    background-position: -113px -67px;
+}
+
+.left .cttbox.weeklyrank ul li.up span:last-child:before {
+    content: '';
+    width: 10px;
+    height: 11px;
+    right: 18px;
+    top: 19px;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -39px;
+}
+
+.left .cttbox.weeklyrank ul li.down span:last-child:before {
+    content: '';
+    width: 10px;
+    height: 11px;
+    right: 18px;
+    top: 19px;
+    background-image: url(../img/proicon.png);
+    background-position: -21px -39px;
+}
+
+.left .cttbox.newnews {
+    height: 360px;
+}
+
+.left .cttbox.teamrank .select_wrap {
+    margin: 10px;
+    text-align: right;
+}
+
+.cttbox.teamrank .team_list th,
+.cttbox.teamrank .team_list td {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.cttbox.teamrank .team_list td {
+    color: #fff;
+}
+
+.cttbox.teamrank .team_list th {
+    background: #0a202e;
+    color: #6388a5;
+}
+
+.cttbox.teamrank .team_list th.rank {
+    width: 46px;
+}
+
+.cttbox.teamrank .team_list th.teamname {
+    width: 140px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.cttbox.teamrank .team_list td:nth-child(2) {
+    width: 140px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.cttbox.teamrank .team_list td:nth-child(2) span {
+    display: block;
+    overflow: hidden;
+    width: 130px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    line-height: 50px;
+}
+
+.cttbox.teamrank .team_list th.game {
+    width: 40px;
+}
+
+.cttbox.teamrank .team_list th.win,
+.cttbox.teamrank .team_list th.draw,
+.cttbox.teamrank .team_list th.loss {
+    width: 30px;
+}
+
+.cttbox.teamrank .team_list th.winpoint {
+    width: 46px;
+}
+
+.cttbox.teamrank .team_list td {
+    border-bottom: 1px solid #0c1f2d;
+}
+
+.cttbox.teamrank .team_list .rank1 td {
+    color: #46a8f1;
+}
+
+.left .cttbox.majergame .tit a button {
+    display: none;
+}
+
+.cttbox.majergame>ul>li {
+    position: relative;
+    display: block;
+    background: #071724;
+    border-bottom: 1px solid #0c1f2d;
+}
+
+.cttbox.majergame>ul>li li {
+    padding: 0 20px;
+    background: #000;
+    border-bottom: 1px solid #0c1f2d;
+}
+
+.cttbox.majergame li>.main {
+    height: 50px;
+    background: #071724;
+    padding-left: 55px;
+    margin-right: 20px;
+}
+
+.cttbox.majergame li.gname>.main {
+    padding-left: 15px;
+}
+
+.cttbox.majergame li.gname>.main span {
+    color: #5c9fcc;
+    font-weight: bold;
+}
+
+.cttbox.majergame li span {
+    line-height: 50px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cttbox.majergame>ul>li span.gamenum {
+    float: right;
+    width: 15px;
+    padding: 0 10px;
+    text-align: center;
+    color: #7b8c96;
+}
+.cttbox.majergame>ul>li>ul {
+    background: #000;
+    color: #fff;
+}
+
+.cttbox.majergame span:first-child {
+    color: #fff;
+}
+
+.cttbox.majergame>ul>li span.gamenum.arr {
+    position: relative;
+    text-indent: -9999px;
+}
+
+.cttbox.majergame>ul>li span.gamenum.arr:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 14px;
+    top: 18px;
+    left: 14px;
+    background-image: url(../img/proicon.png);
+    background-position: -17px -244px;
+    transform: rotate(270deg);
+}
+
+.majergame li.soccer:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -32px -154px;
+}
+
+.majergame li.basketball:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -67px -154px;
+}
+
+.majergame li.baseball:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -102px -154px;
+}
+
+.majergame li.volleyball:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -137px -154px;
+}
+
+.majergame li.icehockey:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -171px -154px;
+}
+
+.majergame li.football:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -205px -154px;
+}
+
+.majergame li.esports:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 27px;
+    height: 25px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -240px -154px;
+}
+
+.majergame li.billiards:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -277px -154px;
+}
+
+.majergame li.tennis:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -311px -154px;
+}
+
+.majergame li.livebet:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    top: 13px;
+    left: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -82px -213px;
+}
+
+.left .cttbox.selectgame .tit a button {
+    display: none;
+}
+/*콘텐츠 왼쪽 끝*/
+
+/*콘텐츠 오른쪽*/
+aside.right {
+    width: 365px;
+}
+.my_betchat{
+    position: relative;
+    min-height: 300px;
+}
+.my_betchat .tab>ul>li {
+    position: relative;
+    width: 121px;
+    height: 59px;
+    border-top: 2px solid #122430;
+}
+.my_betchat .tab>ul>li span.alarm{
+    display: none;
+}
+.my_betchat .navtab{
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+.my_betchat .navtab li{
+    position: relative;
+}
+.my_betchat .navtab li span.alarm{
+    position: absolute;
+    display: none;
+    width: 21px;
+    height: 21px;
+    top: 7px;
+    right: 6px;
+    padding: 0 !important;
+    margin: 0;
+    background: #3593d6;
+    color:#fff;
+    border-radius: 50px;
+    line-height: 21px;
+    font-size: 12px;
+}
+.my_betchat .navtab li.alarm_on span.alarm{
+    display: block;
+}
+.my_betchat .navtab li:hover span.alarm{
+    color:#fff;
+}
+.my_betchat .conBox>.tit{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    margin-bottom: 60px;
+    line-height: 60px;
+    font-size: 17px;
+    background: #324553 url(../img/titlebg.png) right bottom no-repeat;
+    border-top: 1px solid #4b5e6c;
+    box-sizing: border-box;
+}
+.my_betchat .conBox>.tit a:hover{
+    color:#fefefe;
+}
+.my_betchat .tab .tit>a>button.all_cancel_btn,
+.my_betchat .btnwrap .all_cancel_btn{
+    display: inline-block;
+    width: 80px !important;
+    height: 30px !important;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -419px;
+
+}
+
+.right .cttbox.my_betchat .tab li>span:first-child {
+    display: inline-block;
+    padding-top: 36px;
+}
+
+.my_betchat .tab>.tit{
+    display: none;
+}
+.my_betchat .tab>.tit.on{
+    display: block;
+}
+.my_betchat .tab>ul>li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 20px;
+    top: 11px;
+    left: 50px;
+    background-image: url(../img/proicon.png);
+}
+
+.my_betchat .tab>ul>li.chat_tab:after {
+    background-position: -0px -286px;
+}
+
+.my_betchat .tab>ul>li.chat_tab.on:after {
+    background-position: -90px -286px;
+}
+
+.my_betchat .tab>ul>li.bet_tab:after {
+    width: 23px;
+    background-position: -32px -286px;
+}
+
+.my_betchat .tab>ul>li.bet_tab.on:after {
+    width: 23px;
+    background-position: -122px -286px;
+}
+
+.my_betchat .tab>ul>li.mybet_tab:after {
+    width: 23px;
+    background-position: -61px -286px;
+}
+
+.my_betchat .tab>ul>li.mybet_tab.on:after {
+    width: 23px;
+    background-position: -151px -286px;
+}
+
+.my_betchat .tab>ul>li.on,
+.my_betchat .tab>ul>li:hover {
+    background: #000;
+    color: #ffbc2f;
+    border-top: 2px solid #ffbc2f;
+}
+
+.my_betchat .bet_cart{
+    width: 365px;
+}
+
+.my_betchat .bet_cart .bet_list::-webkit-scrollbar,
+.mybet_list::-webkit-scrollbar,
+.chat_list::-webkit-scrollbar,
+.comment textarea::-webkit-scrollbar {
+width: 10px;
+}
+.my_betchat .bet_cart .bet_list::-webkit-scrollbar-thumb,
+.mybet_list::-webkit-scrollbar-thumb,
+.chat_list::-webkit-scrollbar-thumb,
+.comment textarea::-webkit-scrollbar-thumb{
+background-color: #717a81;
+border-radius: 50px;
+}
+.my_betchat .bet_cart .bet_list::-webkit-scrollbar-track,
+.mybet_list::-webkit-scrollbar-track,
+.chat_list::-webkit-scrollbar-track,
+.comment textarea::-webkit-scrollbar-track{
+background-color: #071724;
+}
+
+.bet_list>li{
+    font-size: 14px !important;
+}
+
+
+.my_betchat .bet_cart .bet_list{
+    overflow-x:hidden; 
+    overflow-y:auto;
+    width: 345px;
+    height: 355px;
+    padding: 20px 0;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+.bet_cart .bet_list li{
+    position: relative;
+    display: block;
+    width: 325px;
+    height: 71px;
+    margin-bottom: 5px;
+    padding: 15px !important;
+    border: 1px solid #4a667b;
+    background: #03070a;
+    box-sizing: border-box;
+}
+.bet_cart .bet_list li:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.bet_cart .bet_list li button{
+    position: absolute;
+    right: -3px;
+    top: -4px;
+}
+.bet_cart .bet_list li p{
+    display:block;
+    overflow:hidden;
+    width: 245px;
+    font-size: 14px;
+    line-height: 100%;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;    
+}
+.bet_cart .bet_list li span{
+    font-size: 12px;
+    line-height: 100%;
+    vertical-align: middle;
+}
+.bet_cart .bet_list li:before{
+    display: none !important;
+}
+.bet_cart .bet_list li .txt{
+    float: left;
+    width: 240px;
+}
+.bet_cart .bet_list li .dividend_rate{
+    float: right;
+    width: 45px;
+    line-height: 37px;
+    font-size: 14px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.bet_listbtm {
+    padding: 25px 5px 0 5px;
+    margin: 0 20px 50px 20px;
+    border-top: 1px solid #152f40;
+}
+.bet_listbtm>div{
+    margin-bottom: 15px;
+}
+.bet_listbtm .mygold,
+.bet_listbtm .all_dividend,
+.bet_listbtm .expect_gold{
+    font-size: 13px;
+}
+
+.bet_listbtm .mygold span,
+.bet_listbtm .all_dividend span,
+.bet_listbtm .expect_gold span{
+    overflow:hidden;
+    float: right;
+    width: 230px;
+    margin-top: 2px;
+    text-align: right;
+    font-weight: bold;
+    color:#ffbb32;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+.bet_listbtm .expect_gold .bet_input{
+    float: right;
+    width: 235px;
+    margin-top: -5px;
+}
+.bet_listbtm .expect_gold .bet_input input[type=text]{
+    margin-right: 5px;
+    width: 134px;
+    height: 28px;
+    margin-right: 5px;
+    padding: 0 5px;
+    border: 1px solid #33414c;
+    background: #00070d;
+    color: #fff;
+    text-align: right;
+    vertical-align: middle;
+}
+.bet_listbtm .expect_gold .bet_input::placeholder{
+    color:#fff;
+    background: #000;
+}
+.bet_listbtm .bet_btn{
+    display: block;
+    width: 315px;
+    height: 55px;
+    margin:20px auto 10px;
+    background: url(../img/btn_bet.png);
+}
+.bet_listbtm .bet_btn:hover{
+    background: url(../img/btn_bet_ov.png);
+}
+.betcart_keep{
+    float: right;
+    font-size: 14px;
+}
+.betcart_keep.on .list-i-nokeep,
+.betcart_keep .list-i-keep,
+.betcart_keep input{
+    display: none;
+}
+.betcart_keep .list-i-nokeep,
+.betcart_keep.on .list-i-keep{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+input[id="betcart_keep"] + label {
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 19px;
+    background-position: -330px -71px;
+    background-image: url(../img/proicon.png);
+}   
+input[id="betcart_keep"] + label:after{
+    position: absolute;
+    content: '카트 유지';
+    width: 55px;
+    top: -4px;
+    left: -57px;
+}
+input[id="betcart_keep"]:checked + label {
+    width: 51px;
+    height: 19px;
+    background-position: -330px -51px;
+}
+input[id="betcart_keep"] {
+	display: none;
+}
+
+.bet_listbtm label.onoff_btn {
+    font-size: 13px;
+    width: 115px;
+    height: 25px;
+    margin-right: 0;
+}
+.bet_listbtm label.onoff_btn .list-i-cton,
+.bet_listbtm label.onoff_btn.on .list-i-ctoff{
+    display: none;
+}
+.bet_listbtm label.onoff_btn span{
+    float: right;
+    border: 1px solid #31424c;
+    border-radius: 50px;
+}
+.min_btn{
+    width: 44px;
+    height: 28px;
+    background: url(../img/btn_min.png);
+    vertical-align: middle;
+}
+.max_btn{
+    width: 44px;
+    height: 28px;
+    background: url(../img/btn_max.png);
+    vertical-align: middle;
+}
+/*마이베팅*/
+.mybet_top {
+    margin: 0 20px;
+    padding: 15px 0;
+    
+}
+.mybet_top input{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.mybet_top .select_bet_xbtn{
+    width: 94px;
+    height: 25px;
+    border: 1px solid #a7becc;
+    border-radius: 2px;
+    color: #a7becc;
+    background: transparent;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.mybet_list>li{
+    position: relative;
+    display: block;
+    height: auto;
+    margin: 0 20px;
+    border-bottom: 1px solid #1f2f3c;
+}
+
+.mybet_top{
+    border-bottom: 1px solid #1f2f3c;
+}
+.cttbox.my_betchat .tab>.conBox ul li:before{
+    display: none;
+}
+div ul.mybet_list{
+    overflow:hidden;
+    overflow-y: scroll;
+    max-height: 640px;
+}
+.mybet_list li>button{
+    position: absolute;
+    top: 40px;
+    right: 10px;    
+    margin: 0 8px 0 10px;
+}
+.mybet_list .bet_data{
+    position: relative;
+    padding:15px 0px;
+}
+.mybet_list .bet_data .btn_box{
+    position: absolute;
+    top: 19px;
+    right: 0;
+}
+.mybet_list .bet_data .btn_box .btn3{
+    width: 60px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.mybet_list li ul li .state_box span,
+.mybet_list .bet_data .btn_box .list-i-myspc,
+.mybet_list .bet_data .btn_box .list-i-mylos,
+.mybet_list .bet_data .btn_box .list-i-mywin,
+.mybet_list .los .btn_box .list-i-mywin,
+.mybet_list .win .btn_box .list-i-mylos,
+
+.mybet_list .win ul li .list-i-ftspc,
+.mybet_list .win ul li .list-i-ftlos,
+.mybet_list .los ul li.los .list-i-ftspc,
+.mybet_list .los ul li.los .list-i-ftwin,
+
+.mybet_list .win .btn_box .btn3,
+.mybet_list .spc .btn_box .btn3,
+.mybet_list .los .btn_box .btn3,
+
+.mybet_list .spc ul li .state_box .list-i-ftwin,
+.mybet_list .spc ul li .state_box .list-i-ftlos,
+
+.mybet_list .los ul li.los .state_box .list-i-ftwin,
+.mybet_list .los ul li.los .state_box .list-i-ftspc,
+.mybet_list .los ul li.win .state_box .list-i-ftspc,
+.mybet_list .los ul li.win .state_box .list-i-ftlos,
+.mybet_list .los ul li.spc .state_box .list-i-ftwin,
+.mybet_list .los ul li.spc .state_box .list-i-ftlos{
+    display: none;
+}
+
+.mybet_list .los .btn_box .list-i-mylos,
+.mybet_list .win .btn_box .list-i-mywin,
+.mybet_list .spc .btn_box .list-i-myspc,
+
+.mybet_list .spc ul li .list-i-ftspc,
+.mybet_list .win ul li .list-i-ftwin,
+
+.mybet_list .los ul li.los .state_box .list-i-ftlos,
+.mybet_list .los ul li.win .state_box .list-i-ftwin,
+.mybet_list .los ul li.spc .state_box .list-i-ftspc
+
+{
+    display: block;
+}
+
+.mybet_list .bet_data p{
+    position: relative;
+}
+.mybet_list .bet_data p button{
+    float: right;
+}
+.mybet_list .bet_data p input{
+    width: 15px;
+    height: 15px;
+}
+.mybet_list .bet_data .gtxt{
+    font-size: 12px;
+}
+.mybet_list .bet_data span{
+    font-size: 13px;
+    vertical-align: middle;
+}
+.mybet_list .bet_data p.gold{
+    margin-left: 29px;
+}
+.mybet_list .bet_data p.gold span:first-child .ytxt,
+.mybet_list .bet_data span .ytxt{
+    display:inline-block;
+    overflow:hidden;
+    max-width: 84px;
+    min-width: 31px;
+    width: auto;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;    
+    vertical-align: -1px;
+}
+.mybet_list .bet_data p.gold .wtxt .ytxt{
+    padding: 1px 2px;
+    margin-bottom: -1px;
+}
+
+.mybet_list .bet_data p.gold button span:first-child{
+    margin-right: 15px;
+    transform: rotate(180deg);
+}
+.mybet_list .bet_data .tit .gtxt:before{
+    content: '|';
+    padding: 0 5px;
+}
+.mybet_list .bet_data .tit .btn3{
+    width: 60px;
+    height: 20px;
+    margin-top: 5px;
+}
+.mybet_list li button:after,
+.mybet_list li button:before{
+    display: none;
+}
+.mybet_list .open>button{
+    transform: rotate(0deg);
+}
+.mybet_list>li>button span{
+    margin-bottom: -5px;    
+}
+.mybet_list>li.open>ul{
+    display: block;
+}
+.mybet_list>li>ul{
+    display: none;
+}
+.mybet_list>li>ul>li{
+    display: block;
+}
+.mybet_list>li>ul>li div,
+.mybet_list>li>ul>li div p{
+    font-size: 13px;
+}
+
+.mybet_list li ul .left .wtxt{
+    overflow:hidden;
+    display:block;
+    width: 240px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+.mybet_list>li>ul>li:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.mybet_list>li>ul>li{
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    padding: 15px !important;
+    background: #03070a;
+    box-sizing: border-box;
+}
+.mybet_list>li>ul>li .left{
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    box-sizing: border-box;
+}
+.mybet_list>li>ul>li .left .gtxt{
+    width: 155px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    display:block;
+    overflow:hidden;
+}
+.mybet_list>li>ul>li .right{
+    float: right;
+    width: 43px;
+    line-height: 37px;
+    font-size: 14px;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.mybet_list>li>ul>li .left .state_box{
+    position: absolute;
+    right: 25px;
+    top: 22px;
+}
+
+/*마이베팅 끝*/
+
+/*채팅*/
+
+.my_betchat .tit .btnwrap{
+    position: absolute;
+    top: 14px;
+    right: 0;
+    width: 80px;
+    height: 20px;
+}
+.my_betchat .tit.betcart_tab .btnwrap{
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    width: 150px;
+    height: 30px;
+    vertical-align: middle;
+}
+.my_betchat .tit.betcart_tab .btnwrap label{
+    margin-right: 5px;
+}
+.my_betchat .tit.betcart_tab .btnwrap button{
+    float: right;
+}
+.my_betchat .tit .btnwrap button{
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.chat_box{
+    height: 540px;
+    max-height:540px;
+}
+.chat_box .chat_list{
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 420px;
+    max-height: 420px;
+    padding: 20px 0;
+    margin: 0 0 0 20px;
+    
+    box-sizing: border-box;
+}
+.chat_box .chat_list li{
+    padding-top: 8px;
+    font-size: 13px;
+    word-break: break-all;
+    color:#c8d6df;
+}
+.chat_box .chat_list span{
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 13px;
+    color:#c3d0d9;
+}
+.chat_box .chat_list span.username{
+    color:#fff
+}
+.chat_box .chat_list span.username:after{
+    content: ':';
+    margin: 0 2px;
+}
+.chat_btm{
+    padding: 10px 0;
+    margin: 0 20px;
+    height: 125px;
+    border-top: 1px solid #112c41;
+}
+.chat_btm ul{
+    display: block;
+    margin-bottom: 15px;    
+}
+.chat_btm ul li{
+    float: left;
+}
+.chat_btm ul li button{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.chat_btm ul li:nth-child(1) button{
+    margin-right: 7px;
+}
+.chat_btm ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.chat_btm input{
+    float: left;
+    width: 270px;
+    height: 50px;
+    padding: 0 10px;
+    border: 1px solid #152630;
+    background: #000;
+    color:#fff;
+    box-sizing: border-box;
+}
+.chat_btm ul input::placeholder{
+    color:#fff;
+}
+.chat_btm>button{
+    float: left;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color:#fff;
+    background: #4d6a7c;
+}
+
+/*채팅 끝*/
+
+/*더보기 버튼*/
+.cttbox .tit a.more_btn {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin: 23px;
+    right: 0;
+    top: 1px;
+    background: transparent url(../img/proicon.png);
+    background-position: -37px -41px;
+}
+
+.right .cttbox.minigame ul {
+    padding: 30px 20px;
+}
+
+.right .cttbox.minigame ul li {
+    position: relative;
+    float: left;
+    width: 97px;
+    height: 120px;
+    margin-right: 17px;
+    margin-bottom: 20px;
+}
+
+.right .cttbox.minigame ul li:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.right .cttbox.minigame ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.right .cttbox.minigame ul li a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 97px;
+    height: 97px;
+    top: 0px;
+    left: 0px;
+    background-image: url(../img/minigame.png);
+}
+
+.right .cttbox.minigame ul li:nth-child(1) a:before {
+    background-position: -0px -0px;
+}
+
+.right .cttbox.minigame ul li:nth-child(2) a:before {
+    background-position: -97px -0px;
+}
+
+.right .cttbox.minigame ul li:nth-child(3) a:before {
+    background-position: -194px -0px;
+}
+
+.right .cttbox.minigame ul li:nth-child(4) a:before {
+    background-position: -0px -97px;
+}
+
+.right .cttbox.minigame ul li:nth-child(5) a:before {
+    background-position: -97px -97px;
+}
+
+.right .cttbox.minigame ul li:nth-child(6) a:before {
+    background-position: -194px -97px;
+}
+
+.right .cttbox.minigame ul li a span {
+    margin-top: 105px;
+    display: block;
+    text-align: center;
+}
+
+.right .cttbox>button.more,
+.left .cttbox>button.more {
+    width: 325px;
+    margin: 0 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #11283a;
+}
+
+.cttbox {
+    background: #071724;
+    margin-bottom: 20px;
+}
+
+.cttbox>.tit {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding-left: 20px;
+    line-height: 60px;
+    font-size: 17px;
+    background: #324553 url(../img/titlebg.png) right bottom no-repeat;
+    border-top: 1px solid #4b5e6c;
+    box-sizing: border-box;
+}
+section.center .cttbox>.tit button{
+    float: right;
+    width: 51px;
+    height: 12px;
+    padding: 24px;
+    background: none;
+}
+section.center .cttbox>.tit button:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 24px;
+    right: 20px;
+    width: 51px;
+    height: 12px;
+    background:  url(../img/proicon.png);
+    background-position: -268px -26px;
+}
+
+.cttbox>.more {
+    position: relative;
+    width: 100%;
+    height: 54px;
+}
+
+.cttbox>.more button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.cttbox>.more:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 57px;
+    height: 13px;
+    top: 20px;
+    left: 50%;
+    margin-left: -28px;
+    background-image: url(../img/proicon.png);
+    background-position: -326px -26px;
+}
+
+aside.right>.my {
+    width: 365px;
+    height: 170px;
+    padding: 20px 18px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    background: #071724;
+    color: #fff;
+}
+aside.right>.my.loginaft {
+    width: 365px;
+    height: 134px;
+}
+aside.right>.my .login_btn {
+    width: 325px;
+    height: 54px;
+    margin-top: 5px;
+    background: url(../img/btn_login.png);
+}
+aside.right>.loginaft ul{
+    width: 240px;
+    margin: 5px auto 0;
+}
+aside.right>.loginaft ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+aside.right>.loginaft li{
+    position: relative;
+    float: left;
+}
+aside.right>.loginaft li a{
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 5px;
+    text-align: center;
+    color:#cddbe6;
+}
+.loginaft li:nth-child(1){
+    width: 70px;
+}
+.loginaft li:nth-child(2){
+    width: 80px;
+}
+aside.right>.loginaft li:nth-child(3){
+    width: 90px;
+}
+aside.right>.loginaft li:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 8px;
+    top: 11px;
+    right: 5px;
+    background: #ccdce9;
+}
+aside.right>.loginaft li:last-child:before{
+    display: none;
+}
+
+aside.right>.my p {
+    margin-bottom: 18px;
+}
+
+aside.right>.my p>span {
+    display: inline-block;
+    width: 158px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+aside.right>.my p>span.heart,
+aside.right>.my p>span.spogold {
+    position: relative;
+    float: left;
+    padding-right: 5px;
+}
+
+aside.right>.my p>span.heart:after,
+aside.right>.my p>span.spogold:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    top: 2px;
+    right: -1px;
+    background: #364653;
+}
+
+aside.right>.my p>span.mileage,
+aside.right>.my p>span.spocoin {
+    float: right;
+}
+
+aside.right>.my p>span .num {
+    float: right;
+}
+
+aside.right>.my>p>span>span:last-child {
+    display: inline-block;
+    overflow: hidden;
+    color: #fdb928;
+    font-weight: 400;
+    width: 85px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-align: right;
+}
+
+aside.right>.my p>span>span:first-child {
+    position: relative;
+    padding-left: 19px;
+}
+
+aside.right>.my p>span>span:first-child:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 2px;
+    left: 0px;
+    background-image: url(../img/proicon.png);
+}
+
+aside.right>.my p>span.heart>span:before {
+    background-position: -33px -242px;
+}
+
+aside.right>.my p>span.mileage>span:before {
+    background-position: -58px -242px;
+}
+
+aside.right>.my p>span.spogold>span:before {
+    background-position: -83px -242px;
+}
+
+aside.right>.my p>span.spocoin>span:before {
+    background-position: -108px -242px;
+}
+
+aside.right>.my>p:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+aside.right>.my>button,
+aside.right>.my>a {
+    display: inline-block;
+    width: 103px;
+    height: 34px;
+}
+
+aside.right>.my>a {
+    margin: 0 4px;
+}
+
+aside.right>.my>.letter {
+    background-image: url(../img/btn_message.png);
+}
+
+aside.right>.my>.letter:hover {
+    background-image: url(../img/btn_message_ov.png);
+}
+
+aside.right>.my>.mydata {
+    background-image: url(../img/btn_info.png);
+}
+
+aside.right>.my>.mydata:hover {
+    background-image: url(../img/btn_info_ov.png);
+}
+
+aside.right>.my>.goldcharge {
+    background-image: url(../img/btn_recharge.png);
+}
+
+aside.right>.my>.goldcharge:hover {
+    background-image: url(../img/btn_recharge_ov.png);
+}
+/*콘텐츠 오른쪽 끝*/
+
+/*section 가운데 메인 컨텐츠*/
+section.center {
+    float: left;
+    width: 1070px;
+    margin: 0 20px;
+}
+
+section.center .mainslide {
+    width: 1070px;
+    height: 311px;
+}
+
+.main_slider {
+    margin-bottom: 20px;
+}
+
+/*메인슬라이드 도트*/
+.main_slider .swiper-pagination {
+    width: 100% !important;
+}
+
+.main_slider .swiper-pagination-bullet {
+    width: 32px;
+    height: 13px;
+    opacity: 1;
+    border-radius: 50px;
+    background-color: #c8ced9;
+}
+
+.main_slider .swiper-pagination-bullet-active {
+    background: #ffab00 !important;
+}
+/*메인슬라이드 도트끝*/
+
+/*미니 슬라이드*/
+.mini_slide {
+    width: 365px;
+    height: 220px;
+    background: #c8ced9;
+}
+
+.mini_slide .swiper-pagination {
+    width: 100% !important;
+}
+
+.mini_slide .swiper-pagination-bullet {
+    width: 32px;
+    height: 13px;
+    opacity: 1;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.mini_slide .swiper-pagination-bullet-active {
+    background: #ffab00 !important;
+}
+/*미니 슬라이드 끝*/
+
+/*section 가운데 메인 컨텐츠 끝*/
+main:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+/*베팅게임 div테이블*/
+.bettb {
+    background: #213744;
+}
+
+.bettb>.tit {
+    position: relative;
+    height: 50px;
+    padding:0 55px;
+    line-height: 50px;
+    color: #febe29;
+    background: #213744;
+    border-left: 4px solid #febe29;
+    border-bottom: 1px solid #324a56;
+    font-size: 16px;
+    font-weight: bold;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    box-sizing: border-box;
+}
+
+.bettb>.tit:after {
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 19px;
+    background-image: url(../img/proicon.png);
+}
+
+.bettb>.tit:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: 19px;
+    background-image: url(../img/proicon.png);
+}
+.bettb .betlist{
+    overflow: hidden;
+    position: relative;
+}
+.bettb .betlist>.list {
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    min-height: 70px;
+    height: auto;
+    background:url(../img/gamebd_bg.png);
+}
+.bettb .betlist>.list.moregame {
+    height: 50px;
+}
+.bettb .end_blind:before,
+.bettb .stop_blind:before {
+    content:'';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 3;    
+}
+.bettb .end_blind:after,
+.bettb .stop_blind:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 92px;
+    height: 26px;
+    top: 50%;
+    left: 50%;
+    margin:-13px 0 0 -46px;
+    background:url(../img/bet_blind_txt.png);
+    z-index: 10;
+    box-shadow: black;
+}
+
+.bettb .stop_blind:after {
+    background-position: 0 -25px;
+}
+
+.bettb .betlist>.list>div {
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    min-height: 70px;
+    height: auto;
+    padding: 13px 13px 10px;
+    border-right: 1px solid #324a56;
+    box-sizing: border-box;
+}
+
+.bettb .betlist>.moregame>div {
+    height: 50px;
+}
+
+.bettb .betlist>.list>div>div {
+    color: #9eb6c2;
+    font-size: 13px;
+    line-height: 170%;
+}
+
+.bettb .betlist>.list .type_wrap:nth-child(n+2),
+.bettb .betlist>.list .type_wrap2:nth-child(n+2){
+    margin-top: 18px;
+}
+
+.bettb .betlist>.list>div.team>.teamname {
+    display: inline-block;
+    width: 175px;
+}
+
+.bettb .betlist>.list>div.team>.teamname p {
+    position: relative;
+    overflow: hidden;
+    width: 160px;
+    font-size: 14px;
+    padding-left: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+.bettb .betlist>.list>div.team>.teamname p:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 10px;
+    top: 6px;
+    left: 0px;
+    background-image: url(../img/proicon.png);
+}
+
+.bettb .betlist>.list>div.team>.teamname .homename:before {
+    width: 9px;
+    background-position: -117px -82px;
+}
+
+.bettb .betlist>.list>div.team>.teamname .awayname:before {
+    width: 10px;
+    background-position: -104px -82px;
+}
+
+.bettb .betlist>.list>div.team>button.more {
+    position: relative;
+    float: right;
+    width: 60px;
+    height: 35px;
+    padding-right: 5px;
+    margin-top: 5px;
+    color: #000;
+    background: #ffbc30;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+.bettb .betlist>.list>div.team>button.more:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 15px;
+    left: 10px;
+    background-image: url(../img/proicon.png);
+    background-position: -37px -93px;
+}
+
+.bettb .betlist>.list>div.team>button.more:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    top: 16px;
+    right: 10px;
+    background-image: url(../img/proicon.png);
+    background-position: -48px -95px;
+    transform: rotate(180deg);
+}
+/*접기*/
+.bettb .betlist>.list>div.team>button.more.on:after {
+    transform: rotate(0deg);
+}
+
+.bettb .betlist>.list>div:nth-child(n+3) {
+    padding: 8px 13px;
+    box-sizing: border-box;
+}
+.bettb .betlist>.list.moregame>div:nth-child(n+3) {
+    padding: 8px 13px;
+}
+
+.bettb .betlist>.list>div:nth-child(n+3) div span {
+    display: inline-block;
+    width: 64px;
+    text-align: center;
+    font-weight: 500;
+}
+.bettb .betlist>.list>div:nth-child(n+3) div.type_wrap2 span {
+    display: inline-block;
+    width: 96px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.bettb .betlist>.list>div:nth-child(n+3) button {
+    position: relative;
+    width: 64px;
+    height: 30px;
+    color: #fff;
+    background: #061824;
+    border: 1px solid #061824;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+.bettb .betlist>.list>div:nth-child(n+3) .type_wrap2 button {
+    position: relative;
+    width: 96px;
+    height: 30px;
+    color: #fff;
+    background: #061824;
+    border: 1px solid #061824;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.bettb .betlist>.list>div:nth-child(n+3) button:hover,
+.bettb .betlist>.list>div:nth-child(n+3) button.btn_board_select {
+    background: #1e2925;
+    border: 1px solid #febe29;
+    color: #febe29;
+}
+
+.bettb .betlist>.list>div:nth-child(5) button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 11px;
+    top: 10px;
+    background-image: url(../img/proicon.png);
+}
+
+.bettb .betlist>.list>div:nth-child(5) button.under:before {
+    left: 6px;
+    background-position: -20px -39px !important;
+}
+
+.bettb .betlist>.list>div:nth-child(5) button.draw:before {
+    display: none;
+}
+
+.bettb .betlist>.list>div:nth-child(5) button.over:before {
+    right: 6px;
+    background-position: -0px -39px !important;
+}
+
+.bettb .betlist>div>div:nth-child(1) {
+    width: 124px;
+    height: auto;
+}
+
+.bettb .betlist>div>div:nth-child(2) {
+    width: 266px;
+    height: auto;
+}
+
+.bettb .betlist>div>div:nth-child(3) {
+    width: 227px;
+    height: auto;
+}
+
+.bettb .betlist>div>div:nth-child(4) {
+    width: 227px;
+
+    height: auto;
+}
+
+.bettb .betlist>div>div:nth-child(5) {
+    width: 226px;
+    border-right: 0;
+    height: auto;
+}
+
+.bettb .betlist .list>.start .time {
+    position: relative;
+}
+
+.bettb .betlist .list.live>.start .time:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 16px;
+    bottom: 3px;
+    right: 0px;
+    background-image: url(../img/proicon.png);
+    background-position: -86px -264px;
+}
+.bettb.min_bettb{
+    position: relative;
+    height: 50px;
+    padding:0 44px 0 55px;
+    line-height: 50px;
+    color: #febe29;
+    background: #213744;
+    border-left: 4px solid #febe29;
+    border-bottom: 1px solid #324a56;
+    font-size: 16px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    box-sizing: border-box;
+}
+.bettb.min_bettb>.tit:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 13px;
+    left: -36px;
+    background-image: url(../img/proicon.png);
+}
+.bettb.min_bettb .tit{
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+}
+.bettb.min_bettb div{
+    display: inline-block;
+}
+
+.bettb.min_bettb .num{
+    display: inline-block;
+    float: right;
+    width: 32px;
+    height: 20px;
+    margin: 15px 0;
+    text-align: center;
+    line-height: 20px;
+    background: url(../img/proicon.png) 10px 10px;
+    background-position: -394px -429px;
+    color:#7b8c94;
+    font-size: 12px;
+    cursor: pointer;
+}
+.bettb.min_bettb .num:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 9px;
+    top: 20px;
+    right: 20px;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -268px;
+    transform: rotate(180deg);
+}
+.bettb.min_bettb .betlist{
+    display: none;
+}
+
+/* Example wrapper */
+.slywrap {
+    position: relative;
+}
+
+/* Frame */
+.frame {
+    height: 250px;
+    line-height: 250px;
+    overflow: hidden;
+}
+
+.frame ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 50px;
+}
+
+.frame ul li {
+    float: left;
+    width: 227px;
+    height: 100%;
+    margin: 0 1px 0 0;
+    padding: 0;
+    background: #333;
+    color: #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.frame ul li.active {
+    color: #fff;
+    background: #a03232;
+}
+
+/*메인 최상단 진행중/내경기*/
+.topgamelist {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+}
+
+.topgamelist ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 50px;
+}
+
+.topgamelist ul li {
+    position: relative;
+    float: left;
+    width: 275px;
+    height: 100px;
+    padding: 15px;
+    background: #061721;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #061721;
+}
+
+.topgamelist ul li:hover {
+    border: 1px solid #fdbe31;
+}
+
+.topgamelist ul li div.home,
+.topgamelist ul li div.away {
+    text-align: left;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.topgamelist ul li div.home {
+    margin-bottom: 3px;
+}
+
+.topgamelist ul li div.home .score,
+.topgamelist ul li div.away .score {
+    float: right;
+    width: 33px;
+    height: 19px;
+    border-radius: 2px;
+    text-align: center;
+    color: #fff;
+    background: #1e2f37;
+    line-height: 19px;
+}
+
+.topgamelist li div.gameTit {
+    margin: 0 0 5px 25px;
+    color: #fdbe31;
+    font-weight: 600;
+    text-align: left;
+}
+
+.topgamelist li div.gameTit span {
+    float: right;
+    color: #fff;
+    font-size: 12px;    
+    font-weight: 400;
+    margin-top: 5px;
+}
+.topgamelist li div.gameTit span:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 35px;
+    height: 16px;
+    top: 18px;
+    right: 75px;
+    background-image: url(../img/proicon.png);
+    background-position: -86px -264px;
+}
+
+.topgamelist li:hover {
+    background: #061721 !important;
+}
+
+.topgamelist li div.gameTit:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 21px;
+    height: 20px;
+    top: 17px;
+    left: 15px;
+    background-image: url(../img/proicon.png);
+}
+
+.topgamelist li.soccer div.gameTit:after {
+    background-position: -0px -126px;
+}
+
+.topgamelist li.basketball div.gameTit:after {
+    background-position: -27px -126px;
+}
+
+.topgamelist li.baseball div.gameTit:after {
+    background-position: -55px -126px;
+}
+
+.topgamelist li.volleyball div.gameTit:after {
+    background-position: -82px -126px;
+}
+
+.topgamelist li.icehockey div.gameTit:after {
+    background-position: -109px -126px;
+}
+
+.topgamelist li.football div.gameTit:after {
+    background-position: -136px -126px;
+}
+
+.topgamelist li.esports div.gameTit:after {
+    width: 22px;
+    background-position: -165px -126px;
+}
+
+.topgamelist li.billiards div.gameTit:after {
+    background-position: -193px -126px;
+}
+
+.topgamelist li.tennis div.gameTit:after {
+    background-position: -220px -126px;
+}
+
+/*최상단 진행중 내경기 끝*/
+.gamelist {
+    position: relative;
+    overflow: hidden;
+    width: 1005px;
+}
+
+.gamelist ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.gamelist ul li {
+    position: relative;
+    float: left;
+    width: 105px;
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    background: #122430;
+    color: #8ba7bd;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    border-right: 1px solid #233541;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding-bottom: 9px;
+}
+
+.gamelist ul li:last-child {
+    border-right: 0;
+}
+
+.gamelist ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.gamelist ul li.active {
+    color: #ffbc2f;
+    background: #071724;
+}
+
+.gamelist ul li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 12px;
+    left: 40px;
+    background-image: url(../img/proicon.png);
+}
+.gamelist ul li>span {
+    position: absolute;
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50px;
+    background: #000;
+    top: 5px;
+    right: 5px;
+    font-size: 12px;
+}
+
+.gamelist ul li.all:after {
+    background-position: 2px -154px;
+}
+
+.gamelist ul li.soccer:after {
+    background-position: -32px -154px;
+}
+
+.gamelist ul li.basketball:after {
+    background-position: -67px -154px;
+}
+
+.gamelist ul li.baseball:after {
+    background-position: -102px -154px;
+}
+
+.gamelist ul li.volleyball:after {
+    background-position: -137px -154px;
+}
+
+.gamelist ul li.icehockey:after {
+    background-position: -171px -154px;
+}
+
+.gamelist ul li.football:after {
+    background-position: -205px -154px;
+}
+
+.gamelist ul li.esports:after {
+    width: 27px;
+    background-position: -240px -154px;
+}
+
+.gamelist ul li.billiards:after {
+    width: 24px;
+    height: 24px;
+    background-position: -277px -154px;
+}
+
+.gamelist ul li.tennis:after {
+    background-position: -311px -154px;
+}
+
+/*on일때*/
+.gamelist ul li.all.active:after {
+    background-position: 2px -181px;
+}
+
+.gamelist ul li.soccer.active:after,
+.bettb.soccer>.tit:after {
+    background-position: -32px -181px;
+}
+
+.gamelist ul li.basketball.active:after,
+.bettb.basketball>.tit:after {
+    background-position: -67px -181px;
+}
+
+.gamelist ul li.baseball.active:after,
+.bettb.baseball>.tit:after {
+    background-position: -102px -181px;
+}
+
+.gamelist ul li.volleyball.active:after,
+.bettb.volleyball>.tit:after {
+    background-position: -137px -181px;
+}
+
+.gamelist ul li.icehockey.active:after,
+.bettb.icehockey>.tit:after {
+    background-position: -171px -181px;
+}
+
+.gamelist ul li.football.active:after,
+.bettb.football>.tit:after {
+    background-position: -205px -181px;
+}
+
+.gamelist ul li.esports.active:after,
+.bettb.esports>.tit:after {
+    width: 27px;
+    background-position: -240px -181px;
+}
+
+.gamelist ul li.billiards.active:after,
+.bettb.billiards>.tit:after {
+    width: 24px;
+    height: 24px;
+    background-position: -277px -181px;
+}
+
+.gamelist ul li.tennis.active:after,
+.bettb.tennis>.tit:after {
+    background-position: -311px -181px;
+}
+
+/*미니스포츠탭*/
+.min_gamelist {
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.min_gamelist ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+
+.min_gamelist ul li {
+    position: relative;
+    float: left;
+    width: 65px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    background: #122430;
+    color: #8ba7bd;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    border-right: 1px solid #233541;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    font-size: 11px;
+    box-sizing: border-box;
+    padding-bottom: 9px;
+}
+
+.min_gamelist ul li:last-child {
+    margin-right: 65px;
+    border-right: 0;
+}
+
+.min_gamelist ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.min_gamelist ul li.active {
+    color: #ffbc2f;
+    background: #071724;
+}
+
+.min_gamelist ul li:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 11px;
+    left: 22px;
+    background-image: url(../img/proicon.png);
+}
+
+.min_gamelist ul li.soccer:after {
+    background-position: -0px -105px;
+}
+
+.min_gamelist ul li.basketball:after {
+    background-position: -28px -105px;
+}
+
+.min_gamelist ul li.baseball:after {
+    width: 21px;
+    background-position: -55px -105px;
+}
+
+.min_gamelist ul li.volleyball:after {
+    background-position: -83px -105px;
+}
+
+.min_gamelist ul li.icehockey:after {
+    background-position: -110px -105px;
+}
+
+.min_gamelist ul li.football:after {
+    background-position: -137px -105px;
+}
+
+.min_gamelist ul li.esports:after {
+    width: 21px;
+    background-position: -165px -105px;
+}
+
+.min_gamelist ul li.billiards:after {
+    background-position: -194px -105px;
+}
+
+.min_gamelist ul li.tennis:after {
+    background-position: -221px -105px;
+}
+
+.min_gamelist ul li.soccer.active:after {
+    background-position: -0px -126px;
+}
+
+.min_gamelist ul li.basketball.active:after {
+    background-position: -28px -126px;
+}
+
+.min_gamelist ul li.baseball.active:after {
+    width: 21px;
+    background-position: -55px -126px;
+}
+
+.min_gamelist ul li.volleyball.active:after {
+    background-position: -83px -126px;
+}
+
+.min_gamelist ul li.icehockey.active:after {
+    background-position: -110px -126px;
+}
+
+.min_gamelist ul li.football.active:after {
+    background-position: -137px -126px;
+}
+
+.min_gamelist ul li.esports.active:after {
+    width: 21px;
+    background-position: -165px -126px;
+}
+
+.min_gamelist ul li.billiards.active:after {
+    background-position: -194px -126px;
+}
+
+.min_gamelist ul li.tennis.active:after {
+    background-position: -221px -126px;
+}
+/*미니 스포츠탭 끝*/
+
+/* Controls */
+.slywrap .gamelist+.controls {
+    position: absolute;
+    width: 64px;
+    height: 70px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #233541;
+}
+
+.slywrap .gamelist+.controls:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.slywrap .gamelist+.controls .prevPage,
+.slywrap .gamelist+.controls .nextPage {
+    float: left;
+    position: relative;
+    width: 32px;
+    height: 70px;
+    background: #122430;
+}
+
+.slywrap .gamelist+.controls button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 14px;
+    top: 28px;
+    left: 11px;
+    background-image: url(../img/proicon.png);
+}
+
+.slywrap .gamelist+.controls .prevPage:after {
+    background-position: -0px -244px;
+}
+
+.slywrap .gamelist+.controls .nextPage:after {
+    background-position: -17px -244px;
+}
+
+.slywrap .topgamelist+.controls {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    text-align: center;
+    right: 0;
+    top: 0;
+}
+
+.slywrap .topgamelist+.controls:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.slywrap .topgamelist+.controls .prevPage,
+.slywrap .topgamelist+.controls .nextPage {
+    position: relative;
+    width: 50px;
+    height: 100px;
+    text-indent: -9999px;
+}
+
+.slywrap .topgamelist+.controls .prevPage.disabled,
+.slywrap .topgamelist+.controls .nextPage.disabled {
+    display: none;
+}
+
+.slywrap .topgamelist+.controls button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 22px;
+    height: 56px;
+    top: 23px;
+    left: 10px;
+    background-image: url(../img/proicon.png);
+}
+
+.slywrap .topgamelist+.controls .prevPage:after {
+    background-position: -138px -215px;
+}
+
+.slywrap .topgamelist+.controls .nextPage:after {
+    background-position: -169px -215px;
+}
+
+.slywrap .min_gamelist+.controls {
+    position: absolute;
+    width: 64px;
+    height: 60px;
+    text-align: center;
+    right: 0;
+    top: 0;
+    border-left: 1px solid #233541;
+}
+
+.slywrap .min_gamelist+.controls:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.slywrap .min_gamelist+.controls .prevPage,
+.slywrap .min_gamelist+.controls .nextPage {
+    float: left;
+    position: relative;
+    width: 32px;
+    height: 60px;
+    background: #122430;
+}
+
+.slywrap .min_gamelist+.controls button:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 7px;
+    height: 14px;
+    top: 23px;
+    left: 11px;
+    background-image: url(../img/proicon.png);
+}
+
+.slywrap .min_gamelist+.controls .prevPage:after {
+    background-position: -0px -244px;
+}
+
+.slywrap .min_gamelist+.controls .nextPage:after {
+    background-position: -17px -244px;
+}
+
+/*서브페이지*/
+.center_sub{
+    background: #213744;
+}
+.subtit {
+    width: 1070px;
+    height: 110px;
+}
+
+/*스포츠게임*/
+.subtit.sportgame {
+    background-image: url(../img/subtit/sub_tit_sport.png);
+}
+
+/*이벤트*/
+.subtit.event {
+    background-image: url(../img/subtit/sub_tit_event.png);
+}
+/*자유게시판*/
+.subtit.free {
+    background-image: url(../img/subtit/sub_tit_free.png);
+}
+/*분석게시판*/
+.subtit.analysis {
+    background-image: url(../img/subtit/sub_tit_analysis.png);
+}
+/*골드마켓*/
+.subtit.goldmarket {
+    background-image: url(../img/subtit/sub_tit_gold.png);
+}
+/*내정보*/
+.subtit.mydata {
+    background-image: url(../img/subtit/sub_tit_my.png);
+}
+/*공지*/
+.subtit.notice {
+    background-image: url(../img/subtit/sub_tit_noti.png);
+}
+/*랭킹*/
+.subtit.rank {
+    background-image: url(../img/subtit/sub_tit_rank.png);
+}
+/*경기일정*/
+.subtit.game_schedule {
+    background-image: url(../img/subtit/sub_tit_game.png);
+}
+/*경기일정*/
+.subtit.bet_rule {
+    background-image: url(../img/subtit/sub_tit_rule.png);
+}
+
+
+
+
+
+.submenu_box{
+    position: relative;
+    padding: 14px 30px;
+    background: #324553;
+    border-top: 1px solid #506173;
+}
+.submenu_box .menu {
+    float: left;
+    width: 310px;
+}
+.submenu_box .menu a {
+    color:#b5cbd9;
+    font-size: 17px;
+    vertical-align: middle;
+}
+.submenu_box .menu a:first-child{
+    position: relative;
+    margin-right: 40px;
+}
+.gmk_wrap .submenu_box .menu a:first-child{
+    margin-right: 10px;
+}
+.submenu_box .menu a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #b4c7d5;
+    top: 6px;
+    right: -22px;
+}
+.submenu_box .menu a:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #b4c7d5;
+    top: 6px;
+    right: -22px;
+}
+.gmk_wrap .submenu_box .menu a:after{
+    display: none;
+}
+
+.submenu_box .menu a:last-child:after{
+    display: none;
+}
+.submenu_box .menu a.on {
+    color:#ffb828;
+}
+.submenu_box .s_box{
+    float: right;
+    width: 200px;
+    height: 30px;
+    border-bottom: 1px solid #fff;
+}
+.submenu_box input{
+    float: left;
+    width: 180px;
+    background: none;
+    border: none;
+    color:#fff;
+    margin-top: 5px;
+}
+button.search{
+    width: 17px;
+    height: 17px;
+    background-image: url(../img/proicon.png);
+    background-position: -118px -32px;
+    margin-top: 6px;
+}
+.submenu_box:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.submenu_box>select {
+    float: right;
+    margin-right: 15px;
+}
+
+.submenu_box .myteam_set{
+    float: right;
+    position: relative;
+    width: 105px;
+    height: 30px;
+}
+.submenu_box .myteam_set:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 90px;
+    height: 16px;
+    left: 6px;
+    top: 6px;
+    background-image: url(../img/proicon.png);
+    background-position: -268px -3px;
+}
+.submenu_box .menu .time{
+    display: inline-block;
+    width: 126px;
+    height: 25px;
+    color:#ffba3b;
+    border-radius: 50px;
+    background: #131a22;
+    text-align: center;
+}
+.submenu_box .menu .time span{
+    vertical-align: 2px;
+}
+.submenu_box .menu .time span.list-i-time{
+    vertical-align: 0px;
+}
+.submenu_box .menu .time span:last-child{
+    font-size: 12px;
+}
+/*스포츠 게임끝*/
+
+/*경기일정*/
+.gametime_wrap{
+    position: relative;
+    background: #213744;
+}
+.gametime_wrap .gametime_btn {
+    position: absolute;
+    width: 170px;
+    height: 20px;
+    right: 36px;
+    top: 15px;
+    background-image: url(../img/proicon.png);
+    background-position: -268px 1px;
+
+}
+.gametime_wrap .gametime_btn button:first-child {
+    width: 100px;
+    height: 28px;
+
+}
+.gametime_wrap .gametime_btn button:last-child {
+    width: 65px;
+    height: 29px;
+}
+.gametime_wrap .date_box{
+    width: 200px;
+    height: 90px;
+    margin: 0 auto;
+    line-height: 90px;
+    font-weight: bold;
+    color:#fff;
+    font-size: 25px;
+    text-align: center;
+}
+.gametime_wrap .date_box button{
+    position: relative;
+    width: 12px;
+    height: 20px;
+    padding: 15px;
+    vertical-align: middle;
+}
+.gametime_wrap .date_box button:first-child{
+    float: left;
+    top: 14px;
+}
+.gametime_wrap .date_box button:last-child{
+    float: right;
+    top: 14px;
+}
+.gametime_wrap .date_box button:first-child:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 14px;
+    top: 6px;
+    left: 50%;
+    margin-left: -3px;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -244px;
+}
+.gametime_wrap .date_box button:last-child:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 14px;
+    top: 6px;
+    left: 50%;
+    margin-left: -3px;
+    background-image: url(../img/proicon.png);
+    background-position: -17px -245px;
+}
+.gametime_wrap th {
+    background:#2e4553;
+    border: 1px solid #4e6875;
+    color: #9cb6c5;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 15px;
+}
+.gametime_wrap th:nth-child(1) {
+    width: 140px;
+    border-left: 0;
+}
+.gametime_wrap th:nth-child(2) {
+    width: 140px;
+}
+.gametime_wrap th:nth-child(3) {
+    width: 190px;
+}
+.gametime_wrap th:nth-child(4) {
+    width: 410px;
+}
+.gametime_wrap th:nth-child(5) {
+    width: 190px;
+    border-right: 0;
+}
+
+.gametime_wrap td {
+    height: 47px;
+    color: #fff;
+    text-align: center;
+    border-right: 1px solid #364c59;
+    border-bottom: 1px solid #364c59;
+    font-size: 14px;
+    font-weight: normal;
+    padding:0;
+    margin: 0;
+
+}
+.gametime_wrap td:nth-child(1),
+.gametime_wrap td:nth-child(2),
+.gametime_wrap td:nth-child(3) {
+    line-height: 70px;
+}
+.gametime_wrap td:nth-child(4) {
+    text-align: left;
+    font-size: 14px;
+}
+.gametime_wrap td:nth-child(4) div{
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding: 0 20px 5px;
+}   
+.gametime_wrap td:nth-child(4) div span{
+    margin-right: 10px;    
+    vertical-align: top;
+}
+.gametime_wrap td:nth-child(4) div span.home,
+.gametime_wrap td:nth-child(4) div span.away{
+    display:inline-block;
+    overflow:hidden;
+    max-width:115px;
+    width: auto;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+.gametime_wrap td:nth-child(4) div span.home{
+    margin-right: 0;
+}
+.gametime_wrap button.live{
+    display: none;
+    float: right;
+    width: 63px;
+    height: 24px;
+    background-image: url(../img/proicon.png);
+    background-position: -66px -310px;
+    margin-top: -3px;
+}
+.gametime_wrap div.live .live{
+    display: inline-block !important;
+}
+.gametime_wrap td:nth-child(5) {    
+    text-align: left;
+    font-size: 14px;
+    border-right: 0;
+}
+.gametime_wrap td:nth-child(5) div{
+    width: 140px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+.gametime_wrap td:nth-child(5) div span,
+.gametime_wrap td:nth-child(5) div button {
+    display: inline-block;
+    width: 68px;
+    height: 26px;    
+    vertical-align: -5px;
+}
+.gametime_wrap td:nth-child(5) div button {
+    float: right;
+}
+.gametime_wrap td:nth-child(5) div span.before_btn{
+    background-image: url(../img/proicon.png);
+    background-position: -183px -450px;    
+}
+.gametime_wrap td:nth-child(5) div span.ongoing_btn{
+    background-image: url(../img/proicon.png);
+    background-position: -252px -450px;    
+}
+.gametime_wrap td:nth-child(5) div span.after_btn{
+    background-image: url(../img/proicon.png);
+    background-position: -231px -419px;    
+}
+div>button.data{
+    background-image: url(../img/proicon.png);
+    background-position: -300px -419px;    
+}
+.gametime_wrap td:nth-child(5) div:last-child{
+    padding-bottom: 20px;
+}
+/*경기일정 끝*/
+/*베팅규정*/
+.betrule_wrap{
+    margin: 30px;
+}
+.betrule_wrap>.betrule .tit{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color:#fff;
+}
+.betrule_wrap>.betrule>span{
+    color:#c7dde9;
+}
+.betrule_wrap table{
+    margin: 30px 0;
+}
+.betrule_wrap table tr:first-child{
+    background: #324d5b;
+    font-size: 19px;    
+}
+.betrule_wrap table tr{
+    background: #213743;
+    border-bottom: 1px solid #2c4552;
+    color:#fff;
+    margin-left: 20px;
+}
+.betrule_wrap table tr:first-child th{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    padding-left: 25px;
+    text-align: left;   
+    color: #fff;
+    border-top: 1px solid #466575;
+    border-bottom: 1px solid #466575;
+}
+.betrule_wrap .betrule tr.lh50 th,
+.betrule_wrap .betrule tr.lh50 td{
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.betrule_wrap table th{
+    width: 140px;
+    font-size: 17px;
+    padding: 0 0 0 20px;
+    text-align: left;   
+    color: #fff;
+    box-sizing: border-box;
+}
+.betrule_wrap table td{
+    position: relative;
+    color:#c7dde9;
+    text-align: left;
+    margin: 0;
+    font-size: 15px;
+}
+.betrule_wrap table td p{
+    color:#c7dde9;
+    font-size: 14px;
+    margin-left: 25px;
+}
+.betrule_wrap table td .type1{
+    color:#c7dde9;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: 25px;
+}
+.betrule_wrap table td .type1:before{
+    content: '·';   
+    font-weight: bold;
+    margin-right: 5px;
+    font-size:16px;
+}
+.betrule_wrap table td .type1:last-child{
+    margin-bottom: 20px;
+}
+.betrule_wrap table td span{
+    line-height: 0;
+    font-size: 13px;
+    margin-top: 5px;
+    color:#96b1c3;
+}
+.betrule_wrap table td span:before{
+    content: '*';
+    margin-right: 5px;
+    vertical-align: middle;    
+}
+.betrule_wrap table .lh50 td:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 8px;
+    top: 20px;
+    left: 0px;
+    margin-right: 5px;
+    background-image: url(../img/proicon.png);
+    background-position: -353px -201px;
+}
+.betrule_wrap table td:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 9px;
+    height: 8px;
+    top: 32px;
+    left: 0px;
+    margin-right: 5px;
+    background-image: url(../img/proicon.png);
+    background-position: -353px -201px;
+}
+/*베팅규정끝*/
+
+/*공지사항*/
+
+/*기본게시판*/
+table.board td{
+    text-align: center;
+    vertical-align: middle;
+}
+table.board td:nth-child(1){
+    width: 730px;
+    text-align: left;
+}
+table.board td:nth-child(1) a{
+    display: inline-block;
+    overflow:hidden;
+    width: auto;
+    max-width: 612px;
+    padding-left: 30px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+table.board td:nth-child(1) a,
+table.board td:nth-child(1) i,
+table.board td:nth-child(1) span{
+    line-height: 70px;
+    vertical-align: middle;
+}
+table.board tr,
+table.board td {
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+}
+
+table.board td:nth-child(2){
+    display:block;
+    overflow:hidden;
+    color:#97b1c0;
+    width:95px;
+    margin-right: 25px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    font-size: 13px;
+}
+table.board .noti td:nth-child(1) a,
+table.noti tr td:nth-child(1) a {
+    max-width: 500px;
+    padding-left: 90px;
+}
+table.board tr.noti td:nth-child(2){
+    position: relative;
+}
+table.board tr.noti td:nth-child(2):before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 27px;
+    left: 1px;
+    background-image: url(../img/proicon.png);
+    background-position: -71px -37px;
+}
+table.board td:nth-child(3){
+    position: relative;
+    width: 110px;
+    color:#97b1c0;
+    font-size: 13px;
+}
+table.board td:nth-child(3):before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 29px;
+    left: 13px;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -90px;    
+}
+
+table.board td:nth-child(4){
+    position: relative;
+    width: 100px;
+    color:#97b1c0;
+    font-size: 13px;
+}
+table.board td:nth-child(4):before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    top: 29px;
+    left: 14px;
+    background-image: url(../img/proicon.png);
+    background-position: -16px -90px;
+}
+
+/*게시판 글쓰기*/
+.wripttb_wrap{
+    margin: 30px;
+    border: 1px solid #334956;
+}
+.write_wrap table.write{
+    width: 1010px;      
+    box-sizing: border-box;
+}
+.write_wrap table.write tr{
+    border-bottom: 1px solid #334956;
+    box-sizing: border-box;
+}
+.write_wrap table.write tr:last-child{
+    border: 0;
+}
+.write_wrap table.write th{
+    width: 190px;
+    height: 70px;
+    line-height: 70px;
+    background: #132531;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.write_wrap table.write td{
+    background: none;
+    padding-left: 30px;
+    
+}
+.write_wrap table.write input{
+    width: 660px;
+    height: 45px;
+    background: #132531;
+    border: 1px solid #334956;
+    color:#fff;
+    padding: 0 20px;
+}
+.write_wrap table.write input[type=file]{
+    border: 0;
+    background: none;
+}
+.write_wrap table.write button{
+    width: 90px;
+    height: 38px;
+    background: #253846;
+    border:1px solid #acc0cb;
+    margin-right: 5px;
+}
+.write_wrap .view_btn{
+    padding-bottom: 100px;
+    
+
+}
+
+
+/*게시판 글쓰기 끝*/
+
+
+
+
+/*공지사항 아이콘*/
+table tr.noti td:first-child:before,
+table.noti tr td:first-child:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 49px;
+    height: 20px;
+    top: 28px;
+    left: 30px;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -60px;
+}
+/*게시판 새글 아이콘*/
+tr.noti {
+    background: #132531;
+}
+table.board .list-i-confm,
+table.board .list-i-new{
+    display: none;
+}
+table.board tr.confm .list-i-confm,
+tr.new .list-i-new{
+    display: inline-block;
+}
+tr.noti td:nth-child(1),
+table.noti tr td:nth-child(1) {
+    position: relative;
+}
+tr.noti {
+    background: #132531;
+}
+tr i.new{
+    opacity: 0;
+}
+tr.new i.new {
+    opacity: 1;
+}
+.write_btn{
+    display: block;
+    width: 90px;
+    height: 40px;
+    background-image: url(../img/proicon.png);
+    background-position: -193px -294px;
+}
+.cmt_num{
+    color:#569ccf;
+    font-weight: 500;
+}
+
+/*기본게시판 끝*/
+
+.center_sub .board_top{
+    height: 70px;
+    line-height: 70px;
+    background: #213744;
+    border-bottom: 1px solid #334956;
+    box-sizing: border-box;
+    padding: 15px 30px;
+}
+
+.center_sub .board_top .change_btn{
+    display: inline-block;
+    width: 244px;
+    height: 40px;
+    vertical-align: top;
+}
+.center_sub .board_top .change_btn button{
+    float: left;
+    width: 80px;
+    height: 40px;
+}
+/*게시판 리스트 or 갤러리*/
+.center_sub .board_top .change_btn button.list_btn:first-child{
+    background-image: url(../img/proicon.png);
+    background-position: -246px -337px;
+}
+.center_sub .board_top .change_btn button.list_btn.on:first-child{
+    background-position: -246px -378px;
+}
+.center_sub .board_top .change_btn button.gallery_btn:last-child{
+    background-image: url(../img/proicon.png);
+    background-position: -327px -337px;
+}
+.center_sub .board_top .change_btn button.gallery_btn.on:last-child{
+    background-position: -327px -378px;
+}
+
+/*이벤트 진행중 or 종료된*/
+.center_sub .board_top .change_btn button.ingevt_btn:first-child{
+    width: 122px;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -337px;
+}
+.center_sub .board_top .change_btn button.ingevt_btn.on:first-child{
+    background-position: -0px -378px;
+}
+.center_sub .board_top .change_btn button.endevt_btn:last-child{
+    width: 122px;
+    background-image: url(../img/proicon.png);
+    background-position: -123px -337px;
+}
+.center_sub .board_top .change_btn button.endevt_btn.on:last-child{
+    background-position: -123px -378px;
+}
+
+
+
+
+
+.board_top .write_btn{
+    float: right;
+}
+/*공지사항 끝*/
+
+
+/*게시물 뷰 페이지*/
+.bd_view .more_view{
+    margin: 0 30px;
+}
+.bd_view .date span,
+.bd_view .view span{
+    vertical-align: -1px;
+}
+.bd_view .tit{
+    margin: 0;
+    padding: 0;
+    background: #132531;
+    font-size: 15px;
+}
+.bd_view .tit div{
+    float: left;
+    height: 70px;
+    color:#9eb8c7;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    line-height: 70px;
+}
+.bd_view .tit div:nth-child(1){
+    width: 705px;
+    text-align: left;
+    padding-left: 30px;
+    font-size: 16px;
+    color:#fff;
+}
+.bd_view .tit div:nth-child(2){
+    overflow:hidden;
+    width:140px;
+    max-width: 102px;
+    margin-right: 20px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;   
+}
+.bd_view .tit div:nth-child(3){
+    position: relative;
+    width: 120px;
+    padding-left: 13px;
+}
+.bd_view .tit div:nth-child(4){
+    position: relative;
+    width: 100px;
+    padding-left: 18px;
+}
+
+.bd_view .tit:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.bd_view div.txt{
+    padding: 25px;
+    border-top: 1px solid #334956;
+    font-size: 14px;
+}
+.bd_view .more_view{
+    margin-bottom: 50px;
+    border-top: 1px solid #334956;
+    border-bottom: 1px solid #334956;
+}
+.bd_view .more_view li{
+    padding:10px 25px 0 25px;
+}
+.bd_view .more_view li:last-child{
+    padding:10px 25px 15px 25px;
+}
+.bd_view .more_view li span{
+    font-size: 14px;
+    margin-left: 20px;
+}
+.bd_view .more_view li span:last-child:hover{
+    color:#ffb828;
+    text-decoration: underline;
+}
+.bd_view .more_view li span:first-child{
+    position: relative;
+}
+.bd_view .more_view li span:first-child{
+    color:#9db4c2;
+}
+.bd_view .more_view li:first-child span:first-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    top: 8px;
+    left: -30px;
+    background: transparent url(../img/proicon.png);
+    background-position: -26px -269px;
+    transform: rotate(180deg);
+}
+
+.bd_view .more_view li:last-child span:first-child:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 16px;
+    height: 8px;
+    top: 9px;
+    left: -30px;
+    background-image: url(../img/proicon.png);
+    background-position: -26px -269px;
+}
+/*게시물 뷰 페이지 끝*/
+
+/*댓글*/
+.comment{
+    padding: 0 30px;
+}
+.comment .add{
+    width: 1010px;
+    margin: 0 auto;
+}
+.comment .add button,
+.comment .cmt_add button{
+    float: left;
+    width: 150px;
+    height: 90px;
+    background: #4d81a8;
+}
+.comment textarea{
+    overflow: hidden;
+    overflow-wrap: break-word;
+    float: left;
+    width: 860px;
+    height: 90px;
+    max-height: 500px;
+    padding: 20px;
+    vertical-align: 1.5px;
+    border:0;
+    background: #111a1f;
+    color:#a2aaad;
+    box-sizing: border-box;
+}
+.comment textarea::placeholder{
+    color:#a2aaad;
+}
+.comment .add:after,
+.comment .cmt_add:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.comment .comment_count{
+    margin-top: 20px;
+    padding: 25px;
+    background: #2f4654;
+    border-top: 1px solid #4c6874;
+    border-bottom: 1px solid #4c6874;
+    color:#fff
+}
+.comment .comment_list li{
+    position: relative;
+    padding: 20px 25px;
+    border-bottom: 1px solid #2f4552;
+}
+.comment .comment_list li:nth-child(2n){
+    background:#1f313d;
+}
+.comment .comment_list li div span{
+    font-size: 14px;
+}
+.comment .comment_list li div span:first-child{
+    padding-right:15px;
+}
+.comment .comment_list .cmt_box{
+    padding: 10px 0 0 0;
+    font-size: 14px;
+}
+.comment .cmt_add{
+    margin-top: 20px;
+}
+.comment .cmt_add input {
+    width: 850px;
+}
+.comment .cmt_add button{
+    width: 100px;    
+}
+.comment .cmt_reply div{
+    margin-left: 30px;
+}
+.comment .cmt_reply div:first-child{
+    position: relative;
+}
+.comment .cmt_reply div:first-child:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 11px;
+    top: 7px;
+    left: -20px;
+    background-image: url(../img/proicon.png);
+    background-position: -53px -41px;
+}
+.comment .cmt_btn{
+    display: flex;
+    position: absolute;
+    width: 190px;
+    top: 20px;
+    right: 25px;
+}
+.comment .cmt_reply .cmt_btn{
+    top: 0px;
+    right: 0px;
+}
+.comment .cmt_btn li{
+    -webkit-flex-direction:row;
+    flex-direction:row;
+    margin: 0 0 0 5px;
+    padding: 0;
+    border: 0;    
+}
+.comment .cmt_btn li button{
+    width: 60px;
+    height: 27px;
+    line-height: 26px;
+    border-radius: 2px;
+    border: 1px solid #7c929f;
+    color:#7c929f;    
+    font-size: 13px;
+}
+.view_btn{
+    display: flex;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    width: 325px;
+    padding: 0 30px 50px;
+    margin: 0 auto;
+}
+.view_btn button{
+    width: 160px;
+    height: 60px;
+    margin: 25px 0 0 5px;
+    border-radius: 2px;
+    line-height: 60px;
+    font-size: 17px;
+}
+.view_btn button.btnl{
+    background: #ffbc30;
+    color:#000;
+}
+.view_btn button.btnr{
+    background: #4c82a6;
+    color:#fff;
+}
+/*댓글 끝*/
+
+/*갤러리*/
+.center_sub .gallery{
+    margin: 30px 30px 0 30px;
+}
+.gallery li{
+    float: left;
+    width: 322px;
+    height: 312px;
+    margin: 0 22px 22px 0;
+    background: #132531;
+}
+.gallery:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.gallery li:nth-child(3n){
+    margin: 0 0px 22px 0;
+}
+.gallery li div{
+    box-sizing: border-box;
+}
+
+.gallery li .img{
+    position: relative;
+    width: 100%;
+    height: 187px;
+    background: url(../img/thum_img.png) no-repeat;
+}
+
+.gallery li .list-i-gconfm,
+.gallery li .list-i-gnoti {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gallery li .txt{
+    padding: 20px;
+}
+.gallery li .txt .tit>span:first-child{
+    overflow: hidden;
+    float: left;
+    max-width: 260px;
+    width: auto;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;  
+    font-size: 15px;
+}
+.gallery li .txt .tit:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.gallery li .txt .tit span.list-i-new{
+    margin-left: 5px;
+    vertical-align: 1px;
+}
+
+.gallery li .txt .nickname{
+    margin-bottom: 10px;
+}
+.gallery li .txt .list-i-gm {
+    display: none;
+    vertical-align: -3px;
+}
+.gallery li.gm .txt .list-i-gm {
+    display: inline-block;
+    vertical-align: -3px;
+}
+.gallery li .txt .list-i-date2 {
+    vertical-align: -2px;
+}
+.gallery li .txt .list-i-view {
+    vertical-align: -1px;
+}
+.gallery li .txt p:nth-child(n+2){
+    font-size: 14px;
+}
+.gallery li .txt p:last-child{
+    color:#9ab0bd;   
+}
+.gallery li .txt p:last-child .date{
+    margin-right: 10px;
+}
+.gallery .list-i-gconfm,
+.gallery .list-i-gnoti,
+.gallery .list-i-new {
+    display: none;
+}
+.gallery .gconfm .list-i-gconfm,
+.gallery .noti .list-i-gnoti,
+.gallery .new .list-i-new {
+    display: inline-block;
+}
+/*갤러리 끝*/
+
+/*이벤트*/
+
+.center_sub .event_list:after,
+.center_sub .event_list li:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.center_sub .event_list li{
+    padding: 20px 30px;
+    border-bottom: 1px solid #324a56;
+}
+.center_sub .event_list li a>div {
+    float: left;
+}
+.center_sub .event_list .list-i-eend+.list-i-eing {
+    margin-top: 10px;
+}
+.center_sub .event_list li.ingevt .list-i-eend,
+.center_sub .event_list li.endevt .list-i-eing {
+    display: none;
+}
+.center_sub .event_list li .img{
+    width: 450px;
+    height: 150px;
+    margin-right: 30px;
+}
+.center_sub .event_list li .right{
+    width: 530px;
+    height: 150px;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.center_sub .event_list li .right .tit{
+    padding: 8px 0;
+    font-size: 17px;
+}
+.center_sub .event_list li .right .txt{
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.center_sub .event_list li .right .date{
+    color:#9eb5c3;
+    font-size: 13px;   
+}
+
+/*이벤트 끝*/
+
+
+
+
+/*랭킹*/
+.rank_tbox .date_box{
+    width: 210px;
+    height: 85px;
+    margin: 25px auto 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.date_box button{
+    float: left;
+    position: relative;
+    width: 12px;
+    height: 20px;
+    padding: 15px;
+    margin-top: 18px;
+    vertical-align: middle;
+}
+.date_box button:first-child:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 14px;
+    top: 6px;
+    left: 50%;
+    margin-left: -3px;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -244px;
+}
+.date_box button:last-child:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 14px;
+    top: 6px;
+    left: 50%;
+    margin-left: -3px;
+    background-image: url(../img/proicon.png);
+    background-position: -17px -245px;
+}
+.rank_tbox .date_box .date{
+    float: left;
+    width: 150px;
+    height: 50px;
+}
+.rank_tbox .date_box .date .tit{
+    font-size: 25px;
+    font-weight: bold;
+}
+.rank_tbox .date_box .date .date_txt {
+    color:#b3cad9;
+    font-size: 15px;
+}
+
+.rank_tbox>ul{
+    width: 1010px;
+    margin: 0 auto;
+}
+.rank_tbox>ul:after,
+.rank_tbox .date_box:after,
+.rank_tbox>ul li:after,
+.top_ranker:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.rank_tbox>ul li{
+    float: left;
+    width: 323px;
+    height: 185px;
+    padding: 43px 20px 43px 21px;
+    box-sizing: border-box;
+    background: #122430;
+    border: 1px solid #3b4e5b;
+}
+
+.rank_tbox>ul li:nth-child(2){
+    margin: 0 20px;
+}
+.rank_tbox>ul li .icon{
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/rank_icon.png);
+}
+.rank_tbox>ul li.hitnum .icon{
+    background-position: -0px -0px;
+}
+.rank_tbox>ul li.dividend .icon{
+    background-position: -100px -0px;
+}
+.rank_tbox>ul li.wingold .icon{
+    background-position: -200px -0px;
+}
+.rank_tbox>ul li .right{
+    float: left;
+    width: 170px;
+    margin-left: 10px;
+}
+.rank_tbox>ul li .right>p,
+.rank_tbox>ul li .right>div {
+    width: 170px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+.rank_tbox>ul li .right .tit{
+    padding-bottom: 15px;
+    color:#8eabc1;
+    border-bottom: 1px solid #314552;
+}
+.rank_tbox>ul li .right .myrank{
+    margin-top: 10px;
+    color:#fff;
+}
+.rank_tbox .subtxt{
+    padding: 20px 0 35px;
+    margin-right: 30px;
+    text-align: right;
+    
+}
+.rank_tbox .subtxt p:before {
+    content: '*';
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.rank_tbox .subtxt p:first-child{
+    margin-bottom: 2px;
+}
+.rank_tbox .subtxt p {
+    color:#a9c2d0;
+    font-size: 13px;
+}
+.top_ranker{
+    width: 1010px;
+    margin: 0 auto;
+}
+.top_ranker table{
+    float: left;
+    width: 336px;
+    border-top: 1px solid #3d5765;
+    border-right: 1px solid #3d5765;
+    margin-bottom: 100px;
+}
+.top_ranker table:first-child{
+    border-left: 1px solid #3d5765;
+}
+.top_ranker tr.tit th{
+    background: #2e4653;
+    font-size: 18px;
+}
+
+.top_ranker tr.sort th {
+    background: #122430;    
+    color:#8eabc1;
+    font-size: 16px;
+    text-align: center;
+
+}
+.top_ranker tr{
+    height: 75px;
+    border-bottom: 1px solid #3d5765;
+}
+.top_ranker tr td,
+.top_ranker tr th{
+    line-height: 75px;
+    text-align: center;
+}
+.top_ranker tr td:nth-child(1){
+    width: 64px;
+}
+.top_ranker tr td:nth-child(2){
+    width: 166px;
+    text-align: left;
+    font-size: 15px;
+}
+.top_ranker tr td:nth-child(3){
+    width: 106px;
+}
+.top_ranker tr td:nth-child(3) span{
+    display:inline-block;
+    width: 105px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    text-align: left;
+}
+
+.top_ranker tr td span.list-i-1st{
+    margin: 0;
+}
+.top_ranker tr:nth-child(n+3):hover{
+    background: #ffbc30;
+}
+.top_ranker tr:nth-child(n+3):hover td,
+.top_ranker tr:nth-child(n+3):hover td span{
+    color:#000;
+}
+/*랭킹끝*/
+
+/*내정보-활동분석*/
+.md_wrap{
+    padding: 30px 30px 100px 30px;
+}
+.md_wrap:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.md_wrap table{
+    float: left;
+    width: 495px;
+    height: 290px;
+    margin: 0 20px 20px 0;
+    border: 1px solid #2f4753;
+    box-sizing: border-box;
+}
+
+.md_wrap table:nth-child(2n){
+    margin: 0 0px 20px 0;
+    
+}
+.md_wrap tr{
+    border-bottom: 1px solid #182c37;
+    box-sizing: border-box;
+}
+.md_wrap tr:last-child{
+    border-bottom: 1px solid #2f4753;
+}
+.md_wrap table th{
+    height: 60px;
+    line-height: 60px;
+    background: #2e4553;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 30px;
+}
+.md_wrap table td{
+    position: relative;
+    width: auto;
+    background: #071724;
+    padding-left: 30px;
+    height: 77px;
+    line-height: 77px;
+    box-sizing: border-box;
+}
+.md_wrap table td .num{
+    display:inline-block;
+    overflow:hidden;
+    width: 184px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    vertical-align: middle;
+}
+.md_wrap table td:first-child{
+    width: 154px;
+    color:#9ab5ca;
+}
+.md_wrap table td:first-child:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    top: 32px;
+    left: 101px;
+    background: #324651;
+}
+.md_wrap table:nth-child(n+2) td:first-child:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    top: 32px;
+    left: 150px;
+    background: #324651;
+}
+.md_wrap table td .quest_btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    top: 27px;
+    right: 30px;
+
+}
+.md_wrap .nick_chg{
+    position: absolute;
+    width: 68px;
+    height: 26px;
+    background-image: url(../img/proicon.png);
+    background-position: -367px -253px;
+    top: 25px;
+    right: 30px;
+}
+.md_wrap .charge_add{
+    position: absolute;
+    width: 68px;
+    height: 26px;
+    background-image: url(../img/proicon.png);
+    background-position: -367px -197px;
+    top: 25px;
+    right: 30px;
+}
+.md_wrap .gold_add{
+    position: absolute;
+    width: 68px;
+    height: 26px;
+    background-image: url(../img/proicon.png);
+    background-position: -367px -225px;
+    top: 25px;
+    right: 30px;
+}
+label.onoff_btn{
+    float: right;
+    margin-right: 30px;
+    width: 62px;
+    height: 25px;
+}
+label.onoff_btn.off span.list-i-on,
+label.onoff_btn.on span.list-i-off,
+label.onoff_btn input{
+    display: none;
+}
+
+.md_wrap .chart{
+    float: left;
+    width: 292px;
+    height: 358px;
+    border:1px solid #2f4753;
+}
+.md_wrap .chart .tit{
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    background: #2e4553;
+    font-size: 18px;
+    text-align: left;
+    padding-left: 30px;
+}
+ 
+.md_wrap .chart .tit:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 31px;
+    top: 15px;
+    right: 31px;
+    background-image: url(../img/proicon.png);
+    background-position: -268px -44px;
+}
+
+.md_wrap .chart:first-child div.data{
+    width: 292px;
+    height: 298px;
+}
+.md_wrap .chart:last-child{
+    width: 693px;
+    height: 358px;
+    margin-left: 20px;
+}
+.md_wrap .chart:last-child div.data{
+    width: 693px;
+    height: 298px;
+}
+/*내정보-활동분석 끝*/
+
+/*내정보-베팅내역*/
+.betlog_wrap .betlog_dlookup {
+    position: relative;
+    float: right;
+    width: 425px;
+    margin-top: -1px;
+}
+.betlog_wrap .betlog_dlookup button{
+    float: right;
+    width: 80px;
+    height: 30px;
+    background-image: url(../img/proicon.png);
+    background-position: -81px -419px;
+    margin-top: 1px;
+}
+.betlog_wrap .betlog_dlookup:after{
+    content: '~';
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 4px;
+    top: 2px;
+    left: 162px;  
+}
+.betlog_wrap input{
+    position: relative;
+    width: 152px;
+    height: 32px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #33414c;
+    background: #00070d;
+    color: #fff;
+    text-align: right;
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+.betlog_wrap input[type='checkbox']{
+    position: relative;
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    margin: 0 5px 0 0;
+    vertical-align: -3px;
+}
+.betlog_wrap input::placeholder{
+    color:#fff;
+    background: #000;
+}
+.betlog_wrap input[type=date]:first-child{
+    margin-right: 30px;
+}
+.betlog_wrap input:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 17px;
+    top: 6px;
+    left: 130px;
+    background-image: url(../img/proicon.png);
+    background-position: -138px -33px;
+}
+.betlog_wrap input[type='checkbox']:after{
+    display: none;
+}
+.betlog_wrap input:hover:after{
+    display: none;
+}
+.betlog_wrap .board_top .change_btn button{
+    width: 122px;
+    height: 40px;
+    background: #061721;
+    color:#a6a7ac;
+    text-align: center;
+    line-height: 40px;
+}
+.betlog_wrap .board_top .change_btn button.on{
+    width: 122px;
+    height: 40px;
+    background: #447294;
+    color:#fff;
+    
+}
+
+.betlog_wrap .board_top ul.datebtn_wrap{
+    float: right;
+    width: 335px;
+    height: 30px;
+    margin-top: 5px;
+}
+.betlog_wrap .board_top ul.datebtn_wrap:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+.betlog_wrap .board_top ul.datebtn_wrap li{
+    float: left;
+}
+.betlog_wrap .board_top ul.datebtn_wrap li button{
+    width: 80px;
+    height: 30px;
+    background-image: url(../img/proicon.png);
+}
+.betlog_wrap .board_top ul.datebtn_wrap li button.today_btn{
+    background-position: -285px -211px;
+}
+.betlog_wrap .board_top ul.datebtn_wrap li button.week1_btn{
+    background-position: -285px -243px;
+    margin: 0 5px;
+}
+.betlog_wrap .board_top ul.datebtn_wrap li button.month1_btn{
+    background-position: -285px -274px;
+    margin-right: 5px;
+}
+.betlog_wrap .board_top ul.datebtn_wrap li button.month3_btn{
+    background-position: -285px -305px;
+}
+
+.bet_cancel_btn,
+.bet_shar_btn{
+    width: 95px;
+    height: 32px;
+    vertical-align: -9px;
+}
+.betlog_box.hide .bet_detail,
+.betlog_box.hide .log_wrap .chat-i-uparr{
+    display: none;
+}
+.betlog_box .log_wrap{
+    background-color: #122430;
+    border-bottom: 1px solid #324957;
+}
+.betlog_box .log_wrap>.tit{
+    display: inline-block;
+    height: 60px;
+    padding-left: 30px;
+    line-height: 60px;
+    color: #ffb828;
+}
+.betlog_box .log_wrap>.tit span{
+    margin-right: 20px;
+    color: #ffb828;
+}
+.betlog_box .log_wrap>button{
+    float: right;
+    overflow: hidden;
+    width: 34px;
+    height: 34px;
+    margin: 13px 30px 0 0;
+}
+
+.bet_cancel_btn{
+    background-image: url(../img/mybetpage_btn.png);
+    background-position: -97px -0px;
+}
+.bet_shar_btn{
+    background-image: url(../img/mybetpage_btn.png);
+    background-position: -0px -0px;
+}
+.selectbet_xbtn{
+    width: 94px;
+    height: 25px;
+    border: 1px solid #a7becc;
+    border-radius: 2px;
+    color: #a7becc;
+    background: transparent;
+    vertical-align: middle;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.selbet_cancel_wrap{
+    line-height: 100% !important;
+    padding: 23px 0 0 30px !important;
+    margin: 0 !important;
+}
+.selbet_cancel_wrap input{
+    margin-right: 10px;
+}
+.betlog_box .bet_sumup{
+    height: 75px;
+    border-bottom: 1px solid #334956;    
+}
+.betlog_box .bet_sumup li{
+    float: left;
+    position: relative;
+    text-align: center;
+    height: 75px;
+    line-height: 75px;
+    font-size: 15px;
+}
+.betlog_box .bet_sumup li>.ytxt{
+    margin-left: 5px;
+}
+.betlog_box .bet_sumup li:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 11px;
+    top: 33px;
+    right: 0px;
+    background: #405765;
+}
+.betlog_box .bet_sumup li:last-child:after{
+    display: none;
+}
+
+.betlog_box .chat-i-mywin,
+.betlog_box .chat-i-myloss,
+.betlog_box.loss tr.win .chat-i-myloss,
+.betlog_box .chat-i-myspc,
+.betlog_box tr.special_case .chat-i-mywin{
+    display: none;
+}
+.betlog_box.loss tr.win .chat-i-mywin,
+.betlog_box.loss .chat-i-myloss,
+.betlog_box.win .chat-i-mywin,
+.betlog_box.special_case .bet_sumup li span.chat-i-myspc{
+    display: inline-block;
+}
+
+tr.special_case .chat-i-myspc{
+    display: inline-block;
+}
+
+.betlog_box .bet_sumup li:nth-child(1){
+    width: 252px;
+}
+.betlog_box .bet_sumup li:nth-child(2){
+    width: 115px;
+}
+.betlog_box .bet_sumup li:nth-child(3){
+    width: 144px;
+}
+.betlog_box .bet_sumup li:nth-child(4){
+    width: 210px;
+}
+.betlog_box .bet_sumup li:nth-child(5){
+    width: 244px;
+}
+.betlog_box .bet_sumup li:nth-child(6){
+    width: 104px;
+}
+
+.betlog_box .bet_sumup li:nth-child(4) .ytxt {
+    max-width: 120px;
+    width: auto;
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    vertical-align: middle;
+}
+
+.betlog_box .bet_sumup li:nth-child(5) .ytxt {
+    max-width: 140px;
+    width: auto;
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+    vertical-align: middle;
+}
+
+.betlog_box .bet_detail th{
+    border-bottom: 1px solid #324957;
+}
+.betlog_box .bet_detail td{
+    border-left: 1px solid #324957;
+}
+.bet_detail tr{
+    border-bottom: 1px solid #324957;
+}
+.bet_detail td{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.bet_detail td p{
+    font-size: 14px;
+}
+
+.bet_detail td:nth-child(1) {
+    width: 86px;
+    border-left: 0;
+}
+
+.bet_detail td:nth-child(2),
+.bet_detail td:nth-child(3) {
+    width: 280px;   
+    text-align: left;
+    margin-left: 20px;
+}
+
+.bet_detail td:nth-child(2) p,
+.bet_detail td:nth-child(3) p{
+    position: relative;
+    margin: 0 20px;
+    padding-left: 15px;
+}
+.bet_detail td:nth-child(2) p{
+    padding-left: 0px;
+}
+.bet_detail td:nth-child(3) p span{
+    float: right;
+    margin-top: 3px;
+}
+.bet_detail td:nth-child(3) p:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: 0px;
+    background-image: url(../img/proicon.png);
+    background-position: -117px -81px;
+}
+.bet_detail td:nth-child(3) p.home:before {
+    background-position: -117px -81px;
+}
+.bet_detail td:nth-child(3) p.away:before {
+    top: 6px;
+    background-position: -104px -82px;
+}
+.bet_detail td:nth-child(4) {
+    width: 258px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.bet_detail td:nth-child(4) .txt,
+.bet_detail td:nth-child(4) .bet_vlu {
+    display: block;
+    width: 100%;
+}
+.bet_detail td:nth-child(4) .txt:after,
+.bet_detail td:nth-child(4) .bet_vlu:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.bet_detail td:nth-child(4) .txt span{
+    font-weight: bold;
+}
+.bet_detail td:nth-child(4) .txt span,
+.bet_detail td:nth-child(4) .bet_vlu div {
+    float: left;
+    color:#a2b5c3;
+    font-size: 13px;
+    width: 70px;
+    height: 30px;
+    background: transparent;
+    margin-right: 4px;
+    line-height: 30px;
+}
+.bet_detail td:nth-child(4) .txt span:last-child,
+.bet_detail td:nth-child(4) .bet_vlu div:last-child {
+    margin-right: 0px;
+}
+.bet_detail td:nth-child(4) .bet_vlu div{
+    position: relative;
+    width: 71px;
+    height: 30px;
+    color:#fff;
+    background: #051826;
+    border: 1px solid #051826;
+    margin-right: 4px;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+.bet_detail .unover td:nth-child(4) .bet_vlu div:first-child:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 11px;
+    top: 9px;
+    left: 8px;
+    background-image: url(../img/proicon.png);
+    background-position: -20px -39px;
+}
+.bet_detail .unover td:nth-child(4) .bet_vlu div:last-child:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 11px;
+    top: 9px;
+    left: 8px;
+    background-image: url(../img/proicon.png);
+    background-position: -0px -39px;
+}
+.bet_detail .unover td:nth-child(4) .bet_vlu div.my_pick,
+.bet_detail tr.win .bet_vlu .my_pick{
+    border: 1px solid #feba31;
+    background: #051826;
+}
+
+.bet_detail .loss td .bet_vlu div.my_pick{
+    border: 1px solid #f5f5f5 !important;
+}
+.bet_detail td:nth-child(5) {
+    width: 143px;
+}
+
+.bet_detail td.type2_td .txt span,
+.bet_detail td.type2_td .bet_vlu div{
+    float: left;
+    width: 107px !important;
+}
+
+/*실패일때 내픽*/
+.bet_detail tr.loss .bet_vlu .my_pick{
+    border: 1px solid #feba31;
+}
+/*실패일때 정답*/
+.bet_detail tr.loss .bet_vlu .result_pick{
+    background: #feba31;
+    border: 1px solid #feba31;
+    color:#000;
+    font-weight: bold;
+}
+/*적특일때 내픽*/
+.bet_detail tr.special_case .bet_vlu .my_pick{
+    position: relative;
+    border: 1px solid #29eb92 !important;
+    text-indent:0;
+}
+
+/*내정보-베팅내역 끝*/
+
+/*골드마켓*/
+.gmk_wrap,
+.gmk_wrap3{
+    background: #213743;
+}
+.gmk_wrap>ul{
+    padding: 30px;
+}
+.gmk_wrap>ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.gmk_wrap li{
+    float: left;
+    position: relative;
+    width: 320px;
+    height: 333px;
+    margin:0 22px 22px 0;
+    border: 1px solid #374d5a;
+    background: #15262f;
+    cursor: pointer;
+}
+.gmk_wrap li .item_subtxt{
+    display: none;
+    position: absolute;
+    width: 322px;
+    height: 335px;
+    top:0;
+    left: 0;
+    padding: 30px;
+    text-align: center;
+    background: #000;
+    border: 1px solid #f5c036;
+    box-sizing: border-box;
+}
+.gmk_wrap li .item_subtxt p{
+    font-size: 21px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.gmk_wrap li .item_subtxt span{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.gmk_wrap2 li .item_subtxt span{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+.gmk_wrap li .item_subtxt span:before{
+    content: '-';
+    margin-right: 5px;
+}
+.gmk_wrap2 li .subtxt span:before{
+    content: '-';
+    margin-right: 5px;
+}
+.gmk_wrap li .item_subtxt .price{
+    color: #f5c036;
+    font-weight: bold;
+    font-size: 20px;
+    margin:15px auto 25px;
+}
+.gmk_wrap li .item_subtxt .buy_btn{
+    width: 151px;
+    height: 57px;
+    background: url(../img/bay_btn.png);
+
+}
+.gmk_wrap li:hover .item_subtxt{
+    display: block;
+}
+.gmk_wrap li .list-i-limited{
+    display: none !important;
+}
+.gmk_wrap li.limited .list-i-limited{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gmk_wrap li:nth-child(3n){
+    margin:0 0px 22px 0;
+}
+.gmk_wrap li .img{
+    width: 320px;
+    height: 231px;
+    background-image: url(../img/item/item1.png);
+}
+.gmk_tab .gmk_wrap li:first-child .img{
+    background-image: url(../img/item/keyitem_01.png);
+}
+.gmk_tab .gmk_wrap li:nth-child(2) .img{
+    background-image: url(../img/item/keyitem_02.png);
+}
+.gmk_tab .conBox li:nth-child(3) .img{
+    background-image: url(../img/item/keyitem_03.png);
+}
+
+#vip_mkpage li:nth-child(1) .img{
+    background-image: url(../img/item/gcard1.png);
+}
+
+#vip_mkpage li:nth-child(2) .img{
+    background-image: url(../img/item/gcard2.png);
+}
+
+
+#bet_item li:nth-child(1) .img{
+    background-image: url(../img/item/item2.png);
+}
+#bet_item li:nth-child(2) .img{
+    background-image: url(../img/item/item3.png);
+}
+#bet_item li:nth-child(3) .img{
+    background-image: url(../img/item/item4.png);
+}
+#bet_item li:nth-child(4) .img{
+    background-image: url(../img/item/item2.png);
+}
+#bet_item li:nth-child(5) .img{
+    background-image: url(../img/item/item3.png);
+}
+#bet_item li:nth-child(6) .img{
+    background-image: url(../img/item/item4.png);
+}
+
+.gmk_wrap li .txt {
+    width: 275px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 20px 24px 24px 24px;
+    border-top: 1px solid #3c505b;
+    box-sizing: border-box;
+}
+.gmk_wrap2 li .txt {
+    width: 400px;
+    height: 260px;
+    margin: 0 auto;
+    padding: 30px 24px 30px 24px;
+    border-top: 1px solid #3c505b;
+    box-sizing: border-box;
+}
+.gmk_wrap li .txt p{
+    font-size: 18px;
+    text-align: center;
+}
+.gmk_wrap2{
+    padding-bottom: 100px;
+}
+.gmk_wrap2 li .txt p{
+    font-size: 25px;
+    text-align: center;
+}
+.gmk_wrap2 li .txt p.price{
+    font-size: 20px;
+    text-align: center;
+}
+.gmk_wrap2 li .txt p.subtxt{
+    margin: 20px 0 20px;
+    color:#cbdde7;
+}
+.gmk_wrap2 li .txt p.subtxt span{
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.gmk_wrap li .txt .tit{
+    margin-bottom: 2px;
+}
+.gmk_wrap li .txt .price{
+    color:#f5c036;
+    font-weight: bold;   
+}
+.gmk_wrap li .txt .price .list-i-mcoin{
+    vertical-align: -1px;
+}
+
+.gmk_wrap .treasure_box{
+    width: 1009px;
+    height: 294px;
+    margin: 0 auto;
+
+    padding:0 0 110px 0;
+    background: #213743 url(../img/treasure_box.png) no-repeat;
+}
+.gmk_wrap .treasure_box ul{
+    padding:81px 45px 0 444px;
+}
+.gmk_wrap .treasure_box ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.gmk_wrap .treasure_box li{
+    float: left;
+    width: 160px;
+    height: 181px;
+    margin: 0 20px 0 0;    
+    border: 0;
+}
+.gmk_wrap .treasure_box li div.btn_wrap{
+    width: 133px;
+    margin: 0 auto;
+}
+.gmk_wrap .treasure_box li p{
+    text-align: center;
+    margin-top: 108px;
+    color:#bde2ef;
+}
+.gmk_wrap .treasure_box li button{
+    width: 60px;
+    margin: 10px 0 0 5px;
+    text-align: center;
+    font-size: 13px;
+}
+.gmk_wrap .treasure_box li button:last-child{
+    margin: 10px 5px 0 0    ;
+}
+.gmk_wrap .treasure_box li:nth-child(1){    
+    background: url(../img/item/keybg3.png) no-repeat;
+}
+.gmk_wrap .treasure_box li:nth-child(2){
+    background: url(../img/item/keybg2.png) no-repeat;
+}
+.gmk_wrap .treasure_box li:nth-child(3){
+    margin: 0;
+    background: url(../img/item/keybg1.png) no-repeat;
+}
+
+.gmk_wrap2 li{
+    width: 492px;
+    height: 617px;
+}
+.gmk_wrap2 li .img {
+    width: 492px;
+    height: 253px;
+}
+.gmk_wrap2 li:nth-child(2n){
+    margin: 0 0px 22px 0 ;
+}
+
+.gmk_wrap2 li .buy_btn{
+    display: block;
+    width: 434px;
+    height: 75px;
+    margin: 0 auto;    
+    background: url(../img/buy_btn.png) no-repeat;
+}
+
+.gmk_wrap2 li .item_subtxt {
+    display: none;
+    position: absolute;
+    width: 494px;
+    height: 617px;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    text-align: center;
+    background: #000;
+    border: 1px solid #f5c036;
+    box-sizing: border-box;
+}
+.gmk_wrap3 {
+    padding: 30px 30px 100px 30px;
+}
+.gmk_wrap3 ul:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.gmk_wrap3 ul li{
+    float: left;
+    width: 495px;
+    height: 385px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #152630;
+    border: 1px solid #3b4f5a;
+    margin: 0 0px 20px 0;
+}
+.gmk_wrap3 ul li:nth-child(odd){
+    margin: 0 20px 20px 0;
+
+}
+.gmk_wrap3 ul li .item span.img{
+    float: left;
+    width: 140px;
+    height: 140px;
+    background: url(../img/item/item.png) !important;
+}
+.gmk_wrap3 ul li .item .right{
+    float: right;
+    width: 274px;
+    height: 140px;
+}
+.gmk_wrap3 ul li .item .right .wtxt{
+    font-size: 25px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.gmk_wrap3 ul li .item .right .price span:first-child,
+.gmk_wrap3 ul li .item .right .bonus span:first-child{
+    display: inline-block;
+    width: 70px;
+    color: #9ab1bf;    
+}
+
+.gmk_wrap3 ul li .item .right .price span:last-child{
+    font-weight: bold;
+    color:#f3c031;
+}
+.gmk_wrap3 ul li .item .right .bonus span:last-child{
+    font-weight: bold;
+    color:#6293fc;
+}
+
+.gmk_wrap3 ul li .num {
+    margin-top: 12px;
+}
+.gmk_wrap3 ul li .num button{
+    width: 34px;
+    float: left;;
+    height: 34px;
+    color:#fff;
+    border: 1px solid #23353f;
+    vertical-align: middle;
+    border-right: 0;
+    background:#040d12 url(../img/mbtn.png);
+}
+.gmk_wrap3 ul li .num button:last-child{
+    border-left: 0;
+    border-right: 1px solid #23353f;
+    background:#040d12 url(../img/pbtn.png);
+}
+.gmk_wrap3 ul li .num input{
+    float: left;
+    width: 34px;
+    height: 34px;
+    background: #040d12;
+    color:#fff;
+    border: 1px solid #23353f;
+    vertical-align: middle;
+    text-align: center;
+}
+.gmk_wrap3 ul li .item:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.gmk_wrap3 ul li>p{
+    margin: 24px 0;
+    color:#cbdde7;
+    vertical-align: middle;
+}
+.gmk_wrap3 .buy_btn{
+    display: block;
+    width: 434px;
+    height: 75px;
+    background: url(../img/buy_btn2.png);
+}
+
+.gmk_tab .tab>ul{
+    padding: 2px 30px;
+    background: #324553;
+    border-top: 1px solid #506173;
+}
+.gmk_tab .tab>ul li{
+    position: relative;
+    width: auto;
+    background:none;
+    border-right: 0;
+}
+.gmk_tab .tab>ul li:last-child{
+    float: right;
+    margin-right: 65px;
+}
+.gmk_tab .tab>ul span {
+    color:#fff;
+    font-size: 16px;
+}
+.gmk_tab .tab>ul span:first-child{
+    position: relative;
+    margin-right: 40px;
+}
+
+.gmk_tab .tab>ul li:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #b4c7d5;
+    top: 18px;
+    right: 20px;
+}
+.gmk_tab .tab>ul li:nth-child(3):after{
+    display: none;
+}
+.gmk_tab .tab>ul li:last-child:after{
+    display: none;
+}
+.gmk_tab .tab>ul li.on span{
+    color:#ffb828;
+}
+.gmk_tab .tab{
+    position: relative;
+}
+
+.inventory_box{
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: -9px;
+    width: 565px;
+    height: 439px;
+    background: url(../img/ivbg.png)no-repeat;
+    z-index: 10;
+}
+.gmk_tab.inven_on .inventory_box{
+    display: block;
+}
+.inventory_box .xbtn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+}
+.inventory_box table{
+    width: 486px;
+    height: 272px;
+    margin: 101px 0 0 44px;
+}
+.inventory_box table tr{
+    border: 0;
+}
+.inventory_box table td{
+    display: inline-block;
+    position: relative;
+    width: 82px;
+    height: 82px;
+    margin:6px 7px -1px 4.5px;
+}
+.inventory_box table td span[class*="inven-i"]{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.inventory_box table td>span.num{
+    width: 50px;
+    height: 15px;
+    text-align: right;
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    color: #8fb9dd;
+}
+.inventory_box table td .sub{
+    display: none;
+    position: absolute;
+    width: 270px;
+    height: 185px;
+    padding: 20px;
+    top: 85px;
+    left: 3px;
+    border: 1px solid #8fb9dd;
+    background: #000;
+    z-index: 11;
+}
+.inventory_box table td.on .sub{
+    display: block;
+}
+.inventory_box table td .sub .img{
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin: 0 15px 0px 0;
+    border: 1px solid #8fb9dd;
+}
+.inventory_box table td .sub .img span{
+    width: 45px;
+    background-size: 45px 45px;
+    height: 45px;
+    margin: 20px;
+}
+.inventory_box table td .sub>.dbtxt{
+    display: block;
+    margin: 20px 0 0;
+    font-size: 15px;
+    color:#c9dbe9;
+}
+.inventory_box table td .sub .use{
+    display: inline-block;
+    width: 180px;
+}
+.inventory_box table td .sub .use .wtxt{
+    display: block;
+    margin: 15px 0 10px;
+    font-size: 15px;
+    color:#c9dbe9;
+}
+.inventory_box table td .sub button{
+    width: 70px;
+    height: 30px;
+    border-radius: 2px;
+    background: #5080a4;
+    color: #fff;
+    float: right;
+    font-size: 14px;
+    margin-top: 38px;
+}
+
+
+/*골드마켓 게이지*/
+.point_gaege {
+    position: relative;
+    float: right;
+    width: 435px;
+    margin-top: 13px;
+}
+li.on .point_gaege span {
+    color:#fff;
+}
+.gmk_tab .tab>ul li.on .point_gaege span{
+    color:#fff;
+}
+.point_gaege .inventory_btn{
+    position: absolute;
+    width: 90px;
+    height: 32px;
+    right: -2px;
+    top: -5px;
+    background: url(../img/inventory_btn.png);
+
+}
+.point_gaege>span{
+    position: absolute !important;
+    left: 0;
+    top: 3px;
+    text-align: left;
+    color:#c4d1da;
+    vertical-align: 2px;
+}
+.point_gaege .list-i-question{
+    margin:-4px 0 0 5px;
+}
+.point_gaege div.gaege{
+    overflow: hidden;
+    position: relative;
+    float: right;
+    width: 225px;
+    height: 21px;
+    background:url(../img/gaege_bg.png);
+    border-radius: 50px;
+    margin-right: 100px;
+}
+.point_gaege .gaege .blue_bar{
+    position: relative;
+    max-width: 100%;
+    width: 20%;
+    height: 21px;
+    border-radius: 50px;
+    background: #4d81a8;
+}
+.point_gaege .gaege .blue_bar span{
+    position: absolute;
+    font-size: 13px;
+    top: -4px;
+    left: 5px;
+    margin-right: 0 !important;
+}
+	
+/*골드마켓 게이지 끝*/
+
+
+/*골드마켓 끝*/
+
+/*서브페이지*/
+
+/*footer*/
+footer {
+    margin: 130px auto 0px;
+    background: #000;
+}
+
+footer .wrap {
+    width: 1440px;
+    height: 170px;
+    margin: 0px auto;
+    padding: 52px 0;
+}
+
+footer .left {
+    float: left;
+}
+
+footer .left .googlemap {
+    display: block;
+    background: url(../img/btn_google.png);
+    width: 89px;
+    height: 25px;
+    margin-top: 20px;
+}
+
+footer .right {
+    float: right;
+    background: url(../img/footer_img.png);
+    width: 486px;
+    height: 136px;
+}
+
+footer ul {
+    text-align: left;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+footer ul {
+    margin: 20px 0;
+    width: 420px;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer ul li a {
+    color: #333;
+}
+
+footer ul li:after {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    margin: 0 10px;
+    background: #b8b8b8;
+}
+
+footer ul li:last-child:after {
+    display: none;
+}
+
+footer ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer .logo {
+    margin: 0;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer p {
+    color: #fff;
+    font-size: 12px;
+}
+
+footer .wrap:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*footer 끝*/
+
+/*익스플로러11 전용 css*/
+/* IE9, IE10 */
+@media screen and (min-width:0\0) {
+    table,tr,th,td{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    header .right .logout button:before{
+        width: 18px;
+        height: 17px;
+        top: 2px;
+        left: -5px;
+        background-position: -28px -1px;
+    }    
+    header .right .login button:before{
+        width: 17px;
+        height: 17px;
+        top: 2px;
+        left: -5px;
+        background-position: -14px -1px;
+    }
+        header .right .logout{
+        width: 80px;
+    }
+    header .right .login{
+        width: 52px;
+        padding: 0;
+        padding-right: 10px;
+        margin: 0;
+    }
+    .goodsboard .mile_tr button{
+        vertical-align:4px;
+    }
+    .goodsboard .mile_tr input{
+        padding: 5px;
+        vertical-align: 5px;
+    }
+}
+/*익스플로러11 전용 css 끝*/
+
+
+/*아이콘*/
+
+span[class*="list-i"],
+span[class*="chat-i"],
+span[class*="inven-i"] {
+    display: inline-block;
+    background-image: url(../img/proicon.png);
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+/*새글*/
+span.list-i-new{
+    width: 17px;
+    height: 17px;
+    margin-right: 0;
+    margin-left: 5px;
+    background-position: -60px -82px;
+}
+/*조회*/
+span.list-i-view{
+    width: 18px;
+    height: 12px;
+    background-position: -16px -90px;
+}
+/*달력*/
+span.list-i-date{
+    width: 15px;
+    height: 17px;
+    background-position: -138px -33px;
+}
+span.list-i-date2{
+    width: 13px;
+    height: 13px;
+    background-position: -0px -90px;
+}
+/*gm아이콘*/
+span.list-i-gm{
+    width: 16px;
+    height: 16px;
+    background-position: -71px -37px;
+}
+/*게시판 인증*/
+span.list-i-confm{
+    width: 44px;
+    height: 20px;
+    background-position: -131px -312px;
+}
+/*갤러리 인증*/
+span.list-i-gconfm{
+    width: 60px;
+    height: 60px;
+    background-position: -315px -91px;
+}
+/*갤러리 공지*/
+span.list-i-gnoti{
+    width: 60px;
+    height: 60px;
+    background-position: -376px -91px;
+}
+/*도움말*/
+span.list-i-question{
+    width: 21px;
+    height: 21px;
+    background-position: -371px -429px;
+}
+
+/*진행중이벤트*/
+span.list-i-eing{
+    display: block;
+    width: 68px;
+    height: 26px;
+    background-position: -252px -450px;
+}
+/*종료된이벤트*/
+span.list-i-eend{
+    display: block;
+    width: 68px;
+    height: 26px;
+    background-position: -231px -419px;
+}
+
+/*랭킹아이콘 1st*/
+span.list-i-1st{
+    width: 25px;
+    height: 29px;
+    background-position: -0px -0px;
+}
+/*랭킹아이콘 2st*/
+span.list-i-2st{
+    width: 25px;
+    height: 29px;
+    background-position: -35px -0px;
+}
+/*랭킹아이콘 3st*/
+span.list-i-3st{
+    width: 25px;
+    height: 29px;
+    background-position: -70px -0px;
+}
+/*마이페이지 코인*/
+span.list-i-mcoin{
+    width: 15px !important;
+    height: 15px;
+    background-position: -176px -288px;
+}
+/*마이페이지 골드*/
+span.list-i-mgold{
+    width: 15px;
+    height: 15px;
+    background-position: -176px -304px;
+}
+/*마이페이지 마일리지*/
+span.list-i-mmail{
+    width: 15px;
+    height: 15px;
+    background-position: -176px -320px;
+}
+/*on*/
+span.list-i-on{
+    width: 62px;
+    height: 26px;
+    background-position: -368px -282px;
+}
+/*off*/
+span.list-i-off{
+    width: 62px;
+    height: 26px;
+    background-position: -369px -310px;
+}
+
+/*베팅카트 on*/
+span.list-i-cton{
+    width: 51px;
+    height: 19px;
+    background-position: -330px -51px;
+}
+/*베팅카트 off*/
+span.list-i-ctoff{
+    width: 51px;
+    height: 19px;
+    background-position: -330px -71px;
+}
+
+
+
+/*한정*/
+span.list-i-limited{
+    width: 70px;
+    height: 70px;
+    background-position: -244px -81px;
+}
+/*파란 new*/
+span.list-i-bnew{
+    width: 21px;
+    height: 21px;
+    background-position: -91px -33px;
+}
+/*모래시계*/
+span.list-i-time{
+    width: 9px;
+    height: 14px;
+    background-position: -113px -217px;
+}
+/*회색x버튼*/
+span.list-i-gxbtn{
+    width: 21px;
+    height: 21px;
+    background-position: -80px -82px;
+}
+
+/*채팅 아이콘 도움말*/
+span.chat-i-question{
+    width: 14px;
+    height: 14px;
+    background-position: -0px -313px;
+}
+/*새로고침*/
+span.chat-i-re{
+    width: 14px;
+    height: 14px;
+    background-position: -24px -313px;
+}
+/*새창*/
+span.chat-i-ntab{
+    width: 14px;
+    height: 14px;
+    background-position: -48px -313px;
+}
+
+/* 채팅아이콘 공유 */
+span.chat-i-shar{
+    width: 21px;
+    height: 18px;
+    background-position: -209px -215px;
+}
+/* 채팅아이콘 스크롤 */
+span.chat-i-scrstop{
+    width: 16px;
+    height: 17px;
+    background-position: -240px -215px;
+}
+/* 채팅아이콘 입출입알람 */
+span.chat-i-usarm{
+    width: 16px;
+    height: 17px;
+    background-position: -266px -215px;
+}
+
+
+
+
+
+/*화살표*/
+span.chat-i-arrow{
+    width: 16px;
+    height: 9px;
+    background-position: -0px -268px;
+}
+
+/*내정보 베팅내역 위화살표*/
+span.chat-i-uparr{
+    width: 34px;
+    height: 34px;
+    background-position: -213px -258px;
+}
+/*내정보 베팅내역 아래화살표*/
+span.chat-i-dwarr{
+    width: 34px;
+    height: 34px;
+    background-position: -249px -258px;
+}
+
+/*내정보 베팅내역 적중*/
+span.chat-i-mywin{
+    width: 51px;
+    height: 27px;
+    background-position: -373px -450px;
+}
+/*내정보 베팅내역 적중실패*/
+span.chat-i-myloss{
+    width: 51px;
+    height: 27px;
+    background-position: -321px -450px;
+}
+/*내정보 베팅내역 적중특례*/
+span.chat-i-myspc{
+    width: 51px;
+    height: 27px;
+    background-position: -383px -63px;
+}
+
+
+
+
+/*스포츠 아이콘*/
+span.chat-i-msoccer{
+    width: 20px;
+    height: 20px;
+    background-position: -0px -126px;
+}
+
+span.chat-i-mbasketball{
+    width: 21px;
+    height: 20px;
+    background-position: -27px -126px;
+}
+
+span.chat-i-mbaseball{
+    width: 20px;
+    height: 20px;
+    background-position: -55px -126px;
+}
+
+span.chat-i-mvolleyball{
+    width: 20px;
+    height: 20px;
+    background-position: -83px -126px;
+}
+
+span.chat-i-micehockey{
+    width: 20px;
+    height: 20px;
+    background-position: -110px -126px;
+}
+
+span.chat-i-mfootball{
+    width: 20px;
+    height: 20px;
+    background-position: -137px -126px;
+}
+
+span.chat-i-mesports{
+    width: 23px;
+    height: 18px;
+    background-position: -165px -127px;
+}
+
+span.chat-i-mbilliards{
+    width: 20px;
+    height: 20px;
+    background-position: -194px -126px;
+}
+
+span.chat-i-mtennis{
+    width: 20px;
+    height: 20px;
+    background-position: -221px -126px;
+}
+span.chat-i-lgicon{
+    width: 35px;
+    height: 16px;
+    background: url(../img/livegame/live_icon.png);
+}
+
+span.chat-i-logos{
+    width: 125px;
+    height: 21px;
+    background: url(../img/main/logo_s.png);
+}
+/* 보너스 */
+span.chat-i-bonus{
+    width: 15px !important;
+    height: 15px;
+    background-position: -192px -277px;
+}
+
+/*인벤토리 아이템 궁극열쇠*/
+span.inven-i-ivitm1{
+    width: 82px;
+    height: 82px;
+    background: url(../img/item/ivitm1.png) no-repeat;
+}
+/*인벤토리 아이템 개척열쇠*/
+span.inven-i-ivitm2{
+    width: 82px;
+    height: 82px;
+    background: url(../img/item/ivitm2.png) no-repeat;
+}
+/*인벤토리 아이템 시작열쇠*/
+span.inven-i-ivitm3{
+    width: 82px;
+    height: 82px;
+    background: url(../img/item/ivitm3.png) no-repeat;
+}
+/*인벤토리 아이템 비지니스클래스*/
+span.inven-i-ivitm4{
+    width: 82px;
+    height: 82px;
+    background: url(../img/item/ivitm4.png) no-repeat;
+}
+/*인벤토리 아이템 퍼스트클래스*/
+span.inven-i-ivitm5{
+    width: 82px;
+    height: 82px;
+    background: url(../img/item/ivitm5.png) no-repeat;
+}
+
+
+/* 마이베팅 적특아이콘 */
+span.list-i-myspc{
+    width: 60px;
+    height: 20px;
+    background: url(../img/btct_bg.png) no-repeat;
+    background-position: -0px -84px;
+}
+/* 마이베팅 적중실패아이콘 */
+span.list-i-mylos{
+    width: 60px;
+    height: 20px;
+    background: url(../img/btct_bg.png) no-repeat;
+    background-position: -0px -63px;
+}
+/* 마이베팅 적중성공아이콘 */
+span.list-i-mywin{
+    width: 60px;
+    height: 20px;
+    background: url(../img/btct_bg.png) no-repeat;
+    background-position: -0px -42px;
+}
+/* 마이베팅 적특글씨 */
+span.list-i-ftspc{
+    width: 60px;
+    height: 14px;
+    background: url(../img/btct_bg.png) no-repeat;
+    background-position: -0px -27px;
+}
+/* 마이베팅 실패글씨 */
+span.list-i-ftlos{
+    width: 60px;
+    height: 14px;
+    background: url(../img/btct_bg.png) no-repeat;
+    background-position: -0px -13px;
+}
+/* 마이베팅 성공글씨 */
+span.list-i-ftwin{
+    width: 60px;
+    height: 13px;
+    background: url(../img/btct_bg.png) no-repeat;
+    background-position: -0px -0px;
+}
+
+/* 베팅카트 on */
+span.list-i-keep{
+    width: 51px;
+    height: 19px;
+    background-position: -330px -51px;
+}
+/* 베팅카트 off */
+span.list-i-nokeep{
+    width: 51px;
+    height: 19px;
+    background-position: -330px -71px;
+}
+
+
+/* header logo */
+span.list-i-hdlogo{
+    display: block;
+    width: 163px;
+    height: 27px;
+    background: url(../img/logo.png);
+}
+
+/* footer logo */
+span.list-i-ftlogo{
+    display: block;
+    width: 163px;
+    height: 27px;
+    background: url(../img/ft_logo.png);
+}
+
+/*아이콘 끝*/

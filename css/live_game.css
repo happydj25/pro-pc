@@ -1,0 +1,715 @@
+/*라이브베팅*/
+.livewrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.livetop {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 22px;
+    color: #fff;
+    font-size: 16px;
+    background: #324553 url(../img/titlebg.png) right bottom no-repeat;
+    border-top: 1px solid #4b5e6c;
+}
+.timewrap {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+
+.timewrap span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.engfont {
+    font-family: 'Prompt', sans-serif;
+}
+
+.time_eng {
+    font-size: 14px;
+    color: #fff;
+}
+
+.timenum_eng {
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.live_container {
+    margin-top: 20px;
+}
+
+.live_leftwr {
+    float: left;
+    width: 230px;
+}
+
+.live_rightwr {
+    float: right;
+    width: 750px;
+    height: 160px;
+    background: url(../img/live_topimage.png);
+}
+
+.live_rightwr h1, .live_mainright h1 {
+    background: #2c3e52 url(../img/livegame/active_live_title_arrow.png) no-repeat 10px center;
+    color: #213744;
+    font-size: 13px;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 33px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.live_rightwr h1.on, .live_mainright h1.on {
+    background: #2c3e52 url(../img/livegame/live_title_arrow.png) no-repeat 10px center;
+}
+
+.topimage {
+    height: 160px;
+    margin-bottom: 20px;
+}
+
+
+.center_tab li{
+    position: relative;
+    float: left;
+    min-width: 35px !important;
+    height: 38px;
+    padding: 0 10px;
+    line-height: 38px;
+    cursor: pointer;
+    text-align: center;
+    color: #b5cbd9;
+    text-decoration: none;
+}
+.center_tab li:after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 15px;
+    background: #b4c7d5;
+    top: 13px;
+    right: -1px;
+}
+.center_tab li:last-child:after{
+    display: none;
+}
+.center_tab li.on,
+.center_tab li.active,
+.live_rightwr .center_tab li.active a {
+    color: #ffbc2f;
+    box-sizing: border-box;
+}
+.live_rightwr .center_tab li a {
+    text-align: center;
+    color: #c4cdd6;
+    text-decoration: none;
+}
+.box>.on {
+    font-weight: bold;
+    color: #2C3E52;
+    background: url(../img/livegame/orange_line.png)no-repeat 0px center, 
+    url(../img/livegame/live_title_arrow.png)no-repeat right;
+    padding-left: 10px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+/*승무패3분할*/
+.divisions3, .divisions2 {
+    clear: both;
+    height: 35px;
+    margin-bottom: 2px;
+}
+
+.divisions3:last-child, .divisions2:last-child {
+    margin-bottom: 0px;
+}
+
+.divisions3 .dielem:last-child {
+    width: 76px;
+}
+
+.dielem {
+    float: left;
+    width: 74px;
+    height: 15px;
+    background-color: #ECF0F5;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+.elem_val {
+    float: left;
+    width: 20px;
+}
+
+.elem_num {
+    float: right;
+    text-align: right;
+    width: 40px;
+    font-weight: bold;
+}
+
+/*2분할*/
+.divisions2 .dielem {
+    float: left;
+    width: 123px;
+    height: 15px;
+    background-color: #ECF0F5;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+.divisions2 .elem_val {
+    float: left;
+    width: 20px;
+}
+
+.divisions2 .elem_num {
+    float: right;
+    text-align: right;
+    width: 40px;
+    font-weight: bold;
+}
+
+.divisions2 .dielem:last-child, .dielem:last-child {
+    margin-right: 0px;
+}
+
+/* lnb */
+#lnb {
+    position: relative;
+    width: 300px;
+}
+
+#lnb a {
+    text-decoration: none
+}
+
+#lnb h4 {
+    background: #324553  url(../img/livegame/live_title_arrow.png) no-repeat 10px center;
+    color: #ffbc2f;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 33px;
+    border-top: 1px solid #4b5e6c;
+}
+#lnb h4 span{
+    margin-left: 5px;
+    vertical-align: -2px;
+}
+
+#lnb>ul>li {
+    position: relative;
+}
+
+#lnb>ul>li>ul>li {
+    position: relative;
+}
+
+#lnb>ul>li>a {
+    display: block;
+    line-height: 40px;
+    padding: 0 33px;
+    color: #ffbc30;
+    background: #071724 url(../img/livegame/live_title_arrow.png) no-repeat 10px center;
+    text-decoration: none;
+    border-top: 1px solid #253640;
+}
+
+#lnb>ul>li.on>a {
+    color: #ffbc30;
+    background: #071724 url(../img/livegame/active_live_title_arrow.png) no-repeat 10px center;
+}
+#lnb>ul>li.on>a span{
+    vertical-align: -4px;
+}
+#lnb>ul>li ul {
+    display: none;
+}
+
+#lnb>ul>li>ul>li>a {
+    display: block;
+    padding: 0 30px 0 33px;
+    line-height: 40px;
+    color: inherit;
+    font-size: 14px;
+    background: #213744 url(../img/livegame/live_title_arrow.png) no-repeat 10px center;
+    text-decoration: none;
+    color: #fff;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    overflow: hidden;
+    border-top: 1px solid #213744;
+}
+#lnb>ul>li>ul>li.on a {
+    color: #fff;
+    background: #213744 url(../img/livegame/active_live_title_arrow.png) no-repeat 10px center;
+}
+
+#lnb>ul>li>ul li ul {
+    display: none;
+}
+
+#lnb>ul>li>ul li li a {
+    display: block;
+    padding: 10px;
+    color: #3A4F66;
+    font-size: 13px;
+    border-bottom: 1px solid #213744;
+    background: #0a202e !important;
+}
+
+#lnb>ul>li>ul>li li a:hover {
+    font-weight: bold;
+    border: 1px solid #ffbc30;
+    background: #ffbc30 !important;
+    color:#0a202e;
+}
+
+#lnb .redscore {
+    font-weight: bold;
+    color: red;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+#lnb .score_right {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    color: #213744;
+    background-color: #ffbc30;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: bold;
+}
+
+.live_maintit .score_right {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #ffbc30;
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 600;
+    margin-right: 12px;
+}
+
+/*탭메뉴*/
+.center_tab {
+    background: #324553;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+.center_tab li.on {
+    /* background-color: #000; */
+    font-weight: bold;
+}
+
+.tabcontent_box {
+    clear: both;
+    border-top: none;
+    padding: 10px;
+    background: #213744;
+    box-sizing: border-box;
+}
+
+.tabcontent_box>div {
+    display: none;
+}
+
+.tabcontent .box {
+    display: inline-block;
+    width: 100%;
+}
+
+.inbox span.over {
+    background:     url(../img/livegame/bo_icon_up.png) no-repeat 0px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.inbox span.under {
+    background: url(../img/livegame/bo_icon_down.png) no-repeat 0px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.inbox div:hover{
+    background: #1e2925;
+    border: 1px solid #febe29;
+    color: #febe29;
+}
+.inbox div.lockslot:hover{
+    border: none;
+    color:#fff;
+}
+div.on span.over {
+    background-color: url(../img/livegame/bo_icon_up.png) no-repeat 0px !important;
+}
+
+div.on span.under {
+    background-color: url(../img/livegame/bo_icon_down.png) no-repeat 0px !important;
+}
+
+div.on span.over {
+    background:  url(../img/livegame/bo_icon_up.png) no-repeat 0px !important;
+}
+
+div.on span.under {
+    background:  url(../img/livegame/bo_icon_down.png) no-repeat left !important;
+}
+
+.up_arr {
+    display: block !important;
+    width: 10px !important;
+    height: 10px;
+    background: url(../img/livegame/icon_up.png) no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.down_arr {
+    display: block !important;
+    width: 10px !important;
+    height: 10px;
+    background: url(../img/livegame/icon_down.png) no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.live_maintit {
+    font-size: 14px;
+    width: 730px;
+    height: 50px;
+    position: relative;
+    color: #fff;
+    background: url(../img/livegame/orange_line.png)no-repeat 0px center, url(../img/livegame/active_live_title_arrow.png)no-repeat 99.5%;
+    padding:0 10px;
+    line-height: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.live_mainlist {
+    background-color: #ECF0F5;
+    padding: 0 10px;
+    border-bottom: 2px solid #213744;
+    overflow: hidden
+}
+
+.live_mainlist_same {
+    background-color: #ffbc30;
+    padding: 0 10px;
+    margin-bottom: 2px;
+    overflow: hidden;
+    color: #213744 !important
+}
+
+.live_playname {
+    float: left;
+    width: 80%;
+    line-height: 35px
+}
+
+.live_playscore {
+    float: right;
+    width: 20%;
+    text-align: right;
+    font-weight: bold;
+    line-height: 35px
+}
+
+.inbox div.on {
+    background: #1e2925;
+    border: 1px solid #febe29;
+    color: #febe29;
+    box-sizing: border-box;
+}
+
+
+/*잠긴슬롯 배경색 변경*/
+.inbox .lockslot{
+    background: #324553 !important;
+    border: 0;
+}
+.inbox .lockslot:hover{
+    background: #324553 !important;
+    border:0;
+}
+
+.lockslot span.lock,
+.lockslot>span:last-child {
+    display: block !important;
+    width: 15px !important;
+    height: 20px;
+    background: url(../img/livegame/icon_secret_score.png)no-repeat;
+    margin-top: -2px;
+}
+
+/*경기시작대기중 시간*/
+.livewait_box {
+    position: relative;
+}
+
+.lw_time {
+    position: absolute;
+    width: 148px;
+    height: 44px;
+    top: 204px;
+    left: 242px;
+}
+
+.lw_time div {
+    float: left;
+    width: 36px;
+    height: 44px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 41px;
+    color: #213744;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.lw_time div:last-child {
+    margin-right: 0;
+}
+
+/*실시간경기 수정*/
+.mr11 {
+    margin-right: 11px;
+}
+
+.liv_game_li {
+    position: relative;
+}
+
+.noDepth #live_icon {
+    display: inline-block;
+    position: absolute;
+    right: 19px;
+    width: 40px;
+    height: 16px;
+    background: url(../img/livegame/left_live_icon.png) no-repeat;
+}
+
+.box .live_maintit {
+    cursor: default;
+}
+
+.box div.live_maintit.on:first-child {
+    border-bottom: 1px solid #ddd;
+    line-height: 50px;
+}
+
+.live_rightwr .swiper-container {
+    overflow: hidden;
+    background: #2d3e52;
+}
+.center_tab li.on a {
+    color: #293f56 !important;
+}
+
+.box .inbox>div {
+    float: left !important;
+    background-color: #000;
+    position: relative;
+    width: 730px;
+    height: 35px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.box .inbox>div:first-child>span:last-child {
+    text-align: right;
+    width: 50px;
+    font-weight: bold;
+}
+
+.box .inbox>div>span,
+.box .inbox>div>span.over,
+.box .inbox>div>span.under {
+    line-height: 35px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.box2 .inbox>div>span {
+    padding-left: 0px;
+}
+.box .inbox>div>span:first-child{
+    display:inline-block;
+    overflow:hidden;
+    width:650px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+
+.box .inbox>div>span.odds {
+    float: right !important;
+    margin-right: 10px;
+}
+
+.box2 .inbox div span:first-child {
+    overflow:hidden;
+    float: left;
+    width: 150px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    word-wrap:normal;
+}
+
+.box2 .inbox div span:last-child {
+    float: right;
+    text-align: right;
+    width: 40px;
+    font-weight: bold;
+}
+.box2 .inbox div span:last-child{
+    margin-right:0;
+}
+.box2 .inbox div{
+    position: relative;
+    display: inline-block !important;
+    width: 304px;
+    height: 35px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.box2 .inbox div:nth-child(odd){
+    position: relative;
+    display: inline-block !important;
+    width: 49.8%;
+    height: 35px;
+    padding: 0 10px;
+    line-height: 35px;
+}
+
+.box2 .inbox div:nth-child(2n) {
+    position: relative;
+    float: right !important;
+    width: 49.9%;
+}
+
+.inbox .odds {
+    float: right !important;
+    font-weight: bold;
+}
+
+.inbox .lockslot .odds {
+    display: block !important;
+    width: 15px !important;
+    height: 20px;
+    background: url(../img/livegame/icon_secret_score.png)no-repeat;
+    margin-top: 8px;
+    font-size:0;
+}
+
+.inbox .lockslot .odds span {
+    display: none !important;
+}
+.box3 .inbox div {
+    position: relative;
+    overflow: hidden;
+    width: 33%;
+    height: 35px;
+    margin-right: 2px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+.box3 .inbox div>span:first-child{
+    display: inline-block;
+    overflow: hidden;
+    width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;    
+}
+.box3 .inbox div:nth-child(3n) {
+    margin-right: 0px;
+}
+.inbox:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+/*라이브베팅끝*/
+
+
+/*tr 개별 블라인드*/
+tr.bet_close{
+    display: table-row;
+    position: relative;
+}
+tr.bet_close:after{
+    content: '베팅 마감';
+    width: 857px;
+    height: 35px;
+    display: table-cell;
+    position: absolute;
+    background: url(../img/divlind_bg.png) !important;
+    left: 0;
+    text-align: center;
+    line-height: 35px;
+    z-index: 10;
+    color: #ff0000;
+    font-size: 13px;
+    font-weight: 600;
+}
+tr.bet_close td:nth-child(1),
+.tb_board_bet td:nth-child(1){
+    width: 101px;   
+}
+tr.bet_close td:nth-child(2),
+.tb_board_bet td:nth-child(2){
+    width: 102px;   
+}
+tr.bet_close td:nth-child(3),
+tr.bet_close td:nth-child(5),
+.tb_board_bet td:nth-child(3),
+.tb_board_bet td:nth-child(5){
+    width: 201px;   
+}
+tr.bet_close td:nth-child(4),
+tr.bet_close td:nth-child(6),
+.tb_board_bet td:nth-child(4),
+.tb_board_bet td:nth-child(6){
+    width: 117px;   
+}
+/*tr 개별 블라인드 끝*/
